@@ -1,7 +1,7 @@
 #include <Aurora/Graphics/models/ModelIqm.h>
 
 //test
-#include <Aurora/Graphics/opengl/OpenGLRenderManager.h>
+#include <Aurora/Graphics/opengl/LegacyOpenGLRenderManager.h>
 #include <Aurora/Graphics/TextureManager.h>
 
 namespace Aurora

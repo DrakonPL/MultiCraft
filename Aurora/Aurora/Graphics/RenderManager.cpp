@@ -3,7 +3,6 @@
 
 #ifdef AURORA_PC
 #include <Aurora/Graphics/opengl/LegacyOpenGLRenderManager.h>
-//#include <Aurora/Graphics/opengl/OpenGLRenderManager.h>
 #endif
 
 #ifdef AURORA_PSP
@@ -22,8 +21,6 @@
 #include <Aurora/Graphics/opengl/PSGLRenderManager.h>
 #endif
 
-//Uncomment this to use the new OpenGL renderer where appropriate
-//#define OPENGL_NEW
 
 namespace Aurora
 {
@@ -36,23 +33,7 @@ namespace Aurora
 			if(_renderManager == 0)
 			{
 #ifdef AURORA_PC
-				int major, minor;
-				_getGLVersion(&major, &minor);
-
-				if( major < 3 || ( major == 3 && minor < 2 ) )
-				{
-					printf("OpenGL 3.2 Not Supported!\n");
-					_renderManager = new LegacyOpengGLRenderManager();
-				}
-				else
-				{
-					printf("OpenGL 3.2 Supported!\n");
-#ifdef OPENGL_NEW
-					_renderManager = new OpengGLRenderManager();
-#else
-					_renderManager = new LegacyOpengGLRenderManager();
-#endif
-				}
+				_renderManager = new LegacyOpengGLRenderManager();
 #endif
 
 #ifdef AURORA_PSP
@@ -134,34 +115,5 @@ namespace Aurora
 		{
 			return _currentCam;
 		}
-
-#ifdef AURORA_PC
-		void RenderManager::_getGLVersion(int* major, int* minor)
-		{
-			// for all versions
-			char* ver = (char*)glGetString(GL_VERSION); // ver = "3.2.0"
-
-			*major = ver[0] - '0';
-			if( *major >= 3)
-			{
-				// for GL 3.x
-				glGetIntegerv(GL_MAJOR_VERSION, major); // major = 3
-				glGetIntegerv(GL_MINOR_VERSION, minor); // minor = 2
-			}
-			else
-			{
-				*minor = ver[2] - '0';
-			}
-		}
-#endif
-		/*void RenderManager::drawSpriteAnimation(SpriteAnimation* spriteAnimation)
-		{
-			if(spriteAnimation->_framesCount > 0)
-			{
-				if(spriteAnimation->_currentFrame < spriteAnimation->_framesCount)
-					drawSprite(spriteAnimation->_spriteFrames[spriteAnimation->_currentFrame],spriteAnimation->_position.x,spriteAnimation->_position.x);
-				
-			}
-		}*/
 	}
 }

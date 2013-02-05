@@ -1,7 +1,7 @@
 #include <Aurora/Graphics/opengl/VertexBuffer.h>
 
 #ifdef AURORA_PC
-	#include <Aurora/Graphics/opengl/OpenGLRenderManager.h>
+	#include <Aurora/Graphics/opengl/LegacyOpenGLRenderManager.h>
 #elif defined AURORA_PS3
 	#include <Aurora/Graphics/opengl/PSGLRenderManager.h>
 #else
