@@ -1,0 +1,36 @@
+Opengl tutorials:
+
+http://en.wikibooks.org/wiki/OpenGL_Programming
+http://www.g-truc.net/post-opengl-samples.html#menu
+http://www.dhpoware.com/demos/
+http://www.swiftless.com/tutorials/opengl4/
+http://www.spieleprogrammierung.net/ - lots of tutorials on more advanced stuff but in dutch language...
+http://3dgep.com/ - very nice tutorials - many cg tuts
+
+Shaders:
+
+Book
+http://3dshaders.com/home/index.php?option=com_weblinks&catid=14&Itemid=34
+
+
+Sites:
+http://www.john-chapman.net
+http://www.swiftless.com/opengltuts/opengl4tuts.html
+http://ofps.oreilly.com/titles/9780596804824/
+http://www.raywenderlich.com/3664/opengl-es-2-0-for-iphone-tutorial
+http://sites.google.com/site/opengltutorialsbyaks/introduction-to-opengl-3-2---tutorial-01
+http://maniacdev.com/2009/09/the-categorized-opengl-es-tutorial-collection/
+http://www.lighthouse3d.com/
+http://www.arcsynthesis.org/gltut/
+https://bitbucket.org/alfonse/gltut/src
+http://duriansoftware.com/joe/An-intro-to-modern-OpenGL.-Table-of-Contents.html
+
+Tools:
+
+http://nshader.codeplex.com/ - glsl,glsl coloring in vs
+http://developer.amd.com/tools/gDEBugger/Pages/default.aspx - opengl debugger
+
+Libs:
+
+http://glm.g-truc.net/ - great math library to work with shaders
+http://polycode.org/ - small interesting framework

@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Aurora">
+      <UniqueIdentifier>{b04d188d-67fd-4952-8c9f-78484f5f1300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aurora\Graphics">
+      <UniqueIdentifier>{e00ef9e8-de6c-480b-a132-d989000dacf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aurora\Math">
+      <UniqueIdentifier>{a3ad1535-ee41-4557-8f14-7749a90e1d4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aurora\System">
+      <UniqueIdentifier>{1828c03b-9418-4f15-a034-6ff231b2af63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aurora\Utils">
+      <UniqueIdentifier>{4872a35e-2749-495b-8576-642e22824c6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aurora\Utils\pc">
+      <UniqueIdentifier>{e531ff7d-9b27-4292-997c-b753267c6dad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aurora\System\pc">
+      <UniqueIdentifier>{0bd9f59b-6e59-4925-9313-9f1e4c509b15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aurora\Network">
+      <UniqueIdentifier>{b0ac5019-c34f-4fe6-9e0b-3371be10f474}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aurora\Network\Win32">
+      <UniqueIdentifier>{ebed38a3-c80c-479b-9d82-aa4302a7f8dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aurora\Network\pc">
+      <UniqueIdentifier>{cbc257d7-5c93-47d9-a47e-2feec9a8cccc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aurora\Audio">
+      <UniqueIdentifier>{e48b2c17-e7cc-4ece-9e1e-2e932aed33f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aurora\Audio\sfml">
+      <UniqueIdentifier>{3a3ef0a6-3b59-4997-aa2c-d6cb4a477388}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs">
+      <UniqueIdentifier>{c7c10bb4-c0d8-4ecf-9d20-d7aa83a20a85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\libzip">
+      <UniqueIdentifier>{ef9fa6a6-1a82-43c2-ad79-ad540299d6d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aurora\Graphics\opengl">
+      <UniqueIdentifier>{05e388ed-84dc-4970-8229-7a32febaf193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aurora\Graphics\models">
+      <UniqueIdentifier>{6925b203-87c2-4081-be78-149b7ca3ac3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aurora\Graphics\models\cameras">
+      <UniqueIdentifier>{a9f34a8a-308d-44cf-b9f2-1db85dc85ba9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aurora\Graphics\opengl\shaders">
+      <UniqueIdentifier>{fe5eaf11-da58-40d2-a791-7d949f446d5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\tinyxml">
+      <UniqueIdentifier>{b997fd08-8db0-4307-b803-17edce89e09c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{a832aa6d-e303-4f8b-a866-2876e2dea38e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aurora\Threads">
+      <UniqueIdentifier>{3dde53a8-8dc3-4cac-9e33-bd283c64db86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aurora\Threads\win">
+      <UniqueIdentifier>{6311b3b5-f390-44cb-9045-801584fc6e9e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Aurora\Audio\AudioManager.cpp">
+      <Filter>Aurora\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Audio\sfml\sfmlAudioManager.cpp">
+      <Filter>Aurora\Audio\sfml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Audio\sfml\Sound.cpp">
+      <Filter>Aurora\Audio\sfml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\Camera.cpp">
+      <Filter>Aurora\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\Image.cpp">
+      <Filter>Aurora\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\RenderManager.cpp">
+      <Filter>Aurora\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\SplashScreen.cpp">
+      <Filter>Aurora\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\Sprite.cpp">
+      <Filter>Aurora\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\Sprite3D.cpp">
+      <Filter>Aurora\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\SpriteAnimation.cpp">
+      <Filter>Aurora\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\TextureManager.cpp">
+      <Filter>Aurora\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\TrueTypeFont.cpp">
+      <Filter>Aurora\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Math\BoundingBox.cpp">
+      <Filter>Aurora\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Math\BoundingBox2D.cpp">
+      <Filter>Aurora\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Math\BoundingSphere.cpp">
+      <Filter>Aurora\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Math\Frustum.cpp">
+      <Filter>Aurora\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Math\MathLib.cpp">
+      <Filter>Aurora\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Math\Matrix3.cpp">
+      <Filter>Aurora\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Math\Matrix4.cpp">
+      <Filter>Aurora\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Math\Plane.cpp">
+      <Filter>Aurora\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Math\Polygon.cpp">
+      <Filter>Aurora\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Math\Quaternion.cpp">
+      <Filter>Aurora\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Math\Ray.cpp">
+      <Filter>Aurora\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Math\Vector2.cpp">
+      <Filter>Aurora\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Math\Vector3.cpp">
+      <Filter>Aurora\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Math\Vector4.cpp">
+      <Filter>Aurora\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Network\pc\PcNetworkManager.cpp">
+      <Filter>Aurora\Network\pc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Network\Win32\SocketHelper.cpp">
+      <Filter>Aurora\Network\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Network\Http.cpp">
+      <Filter>Aurora\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Network\IPAddress.cpp">
+      <Filter>Aurora\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Network\NetworkInputControllerClient.cpp">
+      <Filter>Aurora\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Network\NetworkInputControllerServer.cpp">
+      <Filter>Aurora\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Network\NetworkManager.cpp">
+      <Filter>Aurora\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Network\Packet.cpp">
+      <Filter>Aurora\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Network\SelectorBase.cpp">
+      <Filter>Aurora\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Network\SocketTCP.cpp">
+      <Filter>Aurora\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Network\SocketUDP.cpp">
+      <Filter>Aurora\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\System\pc\Clock.cpp">
+      <Filter>Aurora\System\pc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\System\pc\PcSystemManager.cpp">
+      <Filter>Aurora\System\pc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\System\DiskFile.cpp">
+      <Filter>Aurora\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\System\File.cpp">
+      <Filter>Aurora\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\System\FileManager.cpp">
+      <Filter>Aurora\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\System\SystemManager.cpp">
+      <Filter>Aurora\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\System\VFSFile.cpp">
+      <Filter>Aurora\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\System\VFSPack.cpp">
+      <Filter>Aurora\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\System\ZipFile.cpp">
+      <Filter>Aurora\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\System\ZipPack.cpp">
+      <Filter>Aurora\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Utils\pc\WinGameLoader.cpp">
+      <Filter>Aurora\Utils\pc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Utils\AES.cpp">
+      <Filter>Aurora\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Utils\Compression.cpp">
+      <Filter>Aurora\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Utils\Crypto.cpp">
+      <Filter>Aurora\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Utils\GameLoader.cpp">
+      <Filter>Aurora\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Utils\GameManager.cpp">
+      <Filter>Aurora\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Utils\md5.c">
+      <Filter>Aurora\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Starter.cpp" />
+    <ClCompile Include="..\..\libs\libzip\ioapi.c">
+      <Filter>Libs\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\libzip\unzip.c">
+      <Filter>Libs\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\libzip\zip.c">
+      <Filter>Libs\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\libzip\iowin32.c">
+      <Filter>Libs\libzip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Utils\Logger.cpp">
+      <Filter>Aurora\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\RenderTexture.cpp">
+      <Filter>Aurora\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\models\ModelIqm.cpp">
+      <Filter>Aurora\Graphics\models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\models\ModelMd5.cpp">
+      <Filter>Aurora\Graphics\models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\models\ModelMesh.cpp">
+      <Filter>Aurora\Graphics\models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\models\MeshMaterial.cpp">
+      <Filter>Aurora\Graphics\models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\opengl\VertexBuffer.cpp">
+      <Filter>Aurora\Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\models\ModelObj2.cpp">
+      <Filter>Aurora\Graphics\models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\opengl\LegacyOpenGLRenderManager.cpp">
+      <Filter>Aurora\Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\opengl\OpenGLRenderManager.cpp">
+      <Filter>Aurora\Graphics\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\opengl\shaders\shader.cpp">
+      <Filter>Aurora\Graphics\opengl\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\System\Timer.cpp">
+      <Filter>Aurora\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\tinyxml\tinyxml2.cpp">
+      <Filter>Libs\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tests\ThreadTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Threads\Lock.cpp">
+      <Filter>Aurora\Threads</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Threads\Mutex.cpp">
+      <Filter>Aurora\Threads</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Threads\Thread.cpp">
+      <Filter>Aurora\Threads</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Threads\win\MutexImpl.cpp">
+      <Filter>Aurora\Threads\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Threads\win\ThreadImpl.cpp">
+      <Filter>Aurora\Threads\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Threads\Sleep.cpp">
+      <Filter>Aurora\Threads</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Threads\win\SleepImpl.cpp">
+      <Filter>Aurora\Threads\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tests\SimpleTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Math\MathUtils.cpp">
+      <Filter>Aurora\Math</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Aurora\Audio\AudioManager.h">
+      <Filter>Aurora\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Audio\Sound.h">
+      <Filter>Aurora\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Audio\sfml\sfmlAudioManager.h">
+      <Filter>Aurora\Audio\sfml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\Camera.h">
+      <Filter>Aurora\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\Image.h">
+      <Filter>Aurora\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\RenderManager.h">
+      <Filter>Aurora\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\SplashScreen.h">
+      <Filter>Aurora\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\Sprite.h">
+      <Filter>Aurora\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\Sprite3D.h">
+      <Filter>Aurora\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\SpriteAnimation.h">
+      <Filter>Aurora\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\stb_image.h">
+      <Filter>Aurora\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\stb_truetype.h">
+      <Filter>Aurora\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\TextureManager.h">
+      <Filter>Aurora\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\TrueTypeFont.h">
+      <Filter>Aurora\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\Vertex.h">
+      <Filter>Aurora\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\opengl\OpenGLRenderManager.h">
+      <Filter>Aurora\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Math\BoundingBox.h">
+      <Filter>Aurora\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Math\BoundingBox2D.h">
+      <Filter>Aurora\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Math\BoundingSphere.h">
+      <Filter>Aurora\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Math\Frustum.h">
+      <Filter>Aurora\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Math\MathLib.h">
+      <Filter>Aurora\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Math\Matrix3.h">
+      <Filter>Aurora\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Math\Matrix4.h">
+      <Filter>Aurora\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Math\Plane.h">
+      <Filter>Aurora\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Math\Polygon.h">
+      <Filter>Aurora\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Math\Quaternion.h">
+      <Filter>Aurora\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Math\Ray.h">
+      <Filter>Aurora\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Math\Vector2.h">
+      <Filter>Aurora\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Math\Vector3.h">
+      <Filter>Aurora\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Math\Vector4.h">
+      <Filter>Aurora\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Network\pc\PcNetworkManager.h">
+      <Filter>Aurora\Network\pc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Network\Win32\SocketHelper.hpp">
+      <Filter>Aurora\Network\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Network\Http.hpp">
+      <Filter>Aurora\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Network\IPAddress.hpp">
+      <Filter>Aurora\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Network\NetworkInputControllerClient.h">
+      <Filter>Aurora\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Network\NetworkInputControllerServer.h">
+      <Filter>Aurora\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Network\NetworkManager.h">
+      <Filter>Aurora\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Network\Packet.hpp">
+      <Filter>Aurora\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Network\Selector.hpp">
+      <Filter>Aurora\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Network\SelectorBase.hpp">
+      <Filter>Aurora\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Network\SocketHelper.hpp">
+      <Filter>Aurora\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Network\SocketTCP.hpp">
+      <Filter>Aurora\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Network\SocketUDP.hpp">
+      <Filter>Aurora\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\System\pc\PcSystemManager.h">
+      <Filter>Aurora\System\pc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\System\Clock.h">
+      <Filter>Aurora\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\System\DiskFile.h">
+      <Filter>Aurora\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\System\File.h">
+      <Filter>Aurora\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\System\FileManager.h">
+      <Filter>Aurora\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\System\SystemManager.h">
+      <Filter>Aurora\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\System\VFSFile.h">
+      <Filter>Aurora\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\System\VFSPack.h">
+      <Filter>Aurora\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\System\ZipFile.h">
+      <Filter>Aurora\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\System\ZipPack.h">
+      <Filter>Aurora\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Utils\pc\WinGameLoader.h">
+      <Filter>Aurora\Utils\pc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Utils\AES.h">
+      <Filter>Aurora\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Utils\Compression.h">
+      <Filter>Aurora\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Utils\Crypto.h">
+      <Filter>Aurora\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Utils\GameLoader.h">
+      <Filter>Aurora\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Utils\GameManager.h">
+      <Filter>Aurora\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Utils\GameState.h">
+      <Filter>Aurora\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Utils\md5.h">
+      <Filter>Aurora\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Utils\PlatformConfigurator.h">
+      <Filter>Aurora\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\libzip\crypt.h">
+      <Filter>Libs\libzip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\libzip\ioapi.h">
+      <Filter>Libs\libzip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\libzip\unzip.h">
+      <Filter>Libs\libzip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\libzip\zip.h">
+      <Filter>Libs\libzip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\libzip\iowin32.h">
+      <Filter>Libs\libzip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Utils\Logger.h">
+      <Filter>Aurora\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\RenderTexture.h">
+      <Filter>Aurora\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\models\ModelIqm.h">
+      <Filter>Aurora\Graphics\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\models\ModelIqmUtils.h">
+      <Filter>Aurora\Graphics\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\models\ModelIqmGeometry.h">
+      <Filter>Aurora\Graphics\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\models\ModelMd5.h">
+      <Filter>Aurora\Graphics\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\models\ModelObj2.h">
+      <Filter>Aurora\Graphics\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\models\ModelMesh.h">
+      <Filter>Aurora\Graphics\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\models\MeshMaterial.h">
+      <Filter>Aurora\Graphics\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\VertexBuffer.h">
+      <Filter>Aurora\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\opengl\VertexBuffer.h">
+      <Filter>Aurora\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\opengl\LegacyOpenGLRenderManager.h">
+      <Filter>Aurora\Graphics\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\opengl\shaders\shader.h">
+      <Filter>Aurora\Graphics\opengl\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\System\Timer.h">
+      <Filter>Aurora\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\tinyxml\tinyxml2.h">
+      <Filter>Libs\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tests\ThreadsTest.h">
+      <Filter>Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Threads\Lock.hpp">
+      <Filter>Aurora\Threads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Threads\Mutex.hpp">
+      <Filter>Aurora\Threads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Threads\Thread.hpp">
+      <Filter>Aurora\Threads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Threads\win\MutexImpl.hpp">
+      <Filter>Aurora\Threads\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Threads\win\ThreadImpl.hpp">
+      <Filter>Aurora\Threads\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Threads\Sleep.h">
+      <Filter>Aurora\Threads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Threads\win\SleepImpl.hpp">
+      <Filter>Aurora\Threads\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tests\SimpleTest.h">
+      <Filter>Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Math\MathUtils.h">
+      <Filter>Aurora\Math</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Aurora\Network\Selector.inl">
+      <Filter>Aurora\Network</Filter>
+    </None>
+    <None Include="..\..\Aurora\Graphics\opengl\shaders\basic.vert">
+      <Filter>Aurora\Graphics\opengl\shaders</Filter>
+    </None>
+    <None Include="..\..\Aurora\Graphics\opengl\shaders\basic.frag">
+      <Filter>Aurora\Graphics\opengl\shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>
