@@ -37,6 +37,12 @@ namespace Aurora
 		{
 			if(_vertexCount > 0)
 			{
+				if (_vertices == 0 || _indices == 0)
+				{
+					Reset();
+					return;
+				}
+
 				//vbo creation
 				glGenBuffers(1, &_vboId);
 				glBindBuffer(GL_ARRAY_BUFFER, _vboId);

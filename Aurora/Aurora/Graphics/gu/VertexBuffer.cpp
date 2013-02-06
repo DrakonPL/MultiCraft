@@ -31,6 +31,12 @@ namespace Aurora
 		{
 			if(_vertexCount > 0)
 			{
+				if (_vertices == 0 || _indices == 0)
+				{
+					Reset();
+					return;
+				}
+			
 				_pspVertices = (CraftPSPVertex*)memalign(16,_indicesCount * sizeof(CraftPSPVertex));
 				
 				for(int i = 0; i < _indicesCount; i++)
