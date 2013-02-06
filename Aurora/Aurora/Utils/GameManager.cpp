@@ -16,7 +16,8 @@ namespace Aurora
 		void GameManager::ChangeState(GameState* state)
 		{
 			// cleanup the current state
-			if ( !states.empty() ) {
+			if ( !states.empty() )
+			{
 				states.back()->CleanUp();
 				states.pop_back();
 			}
@@ -29,7 +30,8 @@ namespace Aurora
 		void GameManager::PushState(GameState* state)
 		{
 			// pause current state
-			if ( !states.empty() ) {
+			if ( !states.empty() )
+			{
 				states.back()->Pause();
 			}
 
@@ -41,13 +43,15 @@ namespace Aurora
 		void GameManager::PopState()
 		{
 			// cleanup the current state
-			if ( !states.empty() ) {
+			if ( !states.empty() )
+			{
 				states.back()->CleanUp();
 				states.pop_back();
 			}
 
 			// resume previous state
-			if ( !states.empty() ) {
+			if ( !states.empty() )
+			{
 				states.back()->Resume();
 			}
 		}

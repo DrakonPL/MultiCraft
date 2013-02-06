@@ -601,5 +601,380 @@ namespace Aurora
 		{
 			glScalef(scale.x,scale.y,scale.z);
 		}
+
+		//2D drawing
+		void LegacyOpengGLRenderManager::DrawImage(Image* image)
+		{
+			bindTexture(image);
+
+			glEnable(GL_TEXTURE_2D);
+			glEnable(GL_BLEND);
+			glColor4f(1.0f, 1.0f, 1.0f,1.0f);
+
+			TexturedVertex *vertices = new TexturedVertex[4];
+			vertices[0].u = 0.0f; vertices[0].v = 0.0f; vertices[0].x = 0; vertices[0].y = 0; vertices[0].z =0;
+			vertices[1].u = 0.0f; vertices[1].v = 1.0f; vertices[1].x = 0; vertices[1].y = image->_height; vertices[1].z =0;
+			vertices[2].u = 1.0f; vertices[2].v = 0.0f; vertices[2].x = image->_width; vertices[2].y = 0; vertices[2].z =0;
+			vertices[3].u = 1.0f; vertices[3].v = 1.0f; vertices[3].x = image->_width; vertices[3].y = image->_height; vertices[3].z =0;
+
+			glEnableClientState(GL_VERTEX_ARRAY);
+			glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+
+			glVertexPointer(3, GL_FLOAT, GLsizei(sizeof(TexturedVertex)), &vertices[0].x);
+			glTexCoordPointer(2, GL_FLOAT, GLsizei(sizeof(TexturedVertex)), &vertices[0].u);
+
+			glDrawArrays(GL_TRIANGLE_STRIP,0,4);
+
+			glDisableClientState(GL_VERTEX_ARRAY);
+			glDisableClientState(GL_TEXTURE_COORD_ARRAY);
+
+			glDisable(GL_BLEND);
+			glDisable(GL_TEXTURE_2D);
+
+			delete [] vertices;
+		}
+
+		void LegacyOpengGLRenderManager::DrawImage(Image* image,int posx,int posy)
+		{
+			bindTexture(image);
+			glEnable(GL_TEXTURE_2D);
+			glEnable(GL_BLEND);
+			glColor4f(1.0f, 1.0f, 1.0f,1.0f);
+
+			TexturedVertex *vertices = new TexturedVertex[4];
+			vertices[0].u = 0.0f;vertices[0].v = 0.0f;vertices[0].x = posx;vertices[0].y = posy;vertices[0].z = 0.0f;
+			vertices[1].u = 0.0f;vertices[1].v = 1.0f;vertices[1].x = posx;vertices[1].y = posy+image->_height;vertices[1].z = 0.0f;
+			vertices[2].u = 1.0f;vertices[2].v = 0.0f;vertices[2].x = posx+image->_width;vertices[2].y = posy;vertices[2].z = 0.0f;
+			vertices[3].u = 1.0f;vertices[3].v = 1.0f;vertices[3].x = posx+image->_width;vertices[3].y = posy+image->_height;vertices[3].z = 0.0f;
+
+			glEnableClientState(GL_VERTEX_ARRAY);
+			glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+
+			glVertexPointer(3, GL_FLOAT, GLsizei(sizeof(TexturedVertex)), &vertices[0].x);
+			glTexCoordPointer(2, GL_FLOAT, GLsizei(sizeof(TexturedVertex)), &vertices[0].u);
+
+			glDrawArrays(GL_TRIANGLE_STRIP,0,4);
+
+			glDisableClientState(GL_VERTEX_ARRAY);
+			glDisableClientState(GL_TEXTURE_COORD_ARRAY);
+
+			glDisable(GL_BLEND);
+			glDisable(GL_TEXTURE_2D);
+
+			delete [] vertices;
+		}
+
+		void LegacyOpengGLRenderManager::DrawImage(Image* image,int posx,int posy,int width,int height)
+		{
+			bindTexture(image);
+			glEnable(GL_TEXTURE_2D);
+			glEnable(GL_BLEND);
+			glColor4f(1.0f, 1.0f, 1.0f,1.0f);
+
+			TexturedVertex *vertices = new TexturedVertex[4];
+			vertices[0].u = 0.0f;vertices[0].v = 0.0f;vertices[0].x = posx;vertices[0].y = posy;vertices[0].z = 0.0f;
+			vertices[1].u = 0.0f;vertices[1].v = 1.0f;vertices[1].x = posx;vertices[1].y = posy+height;vertices[1].z = 0.0f;
+			vertices[2].u = 1.0f;vertices[2].v = 0.0f;vertices[2].x = posx+width;vertices[2].y = posy;vertices[2].z = 0.0f;
+			vertices[3].u = 1.0f;vertices[3].v = 1.0f;vertices[3].x = posx+width;vertices[3].y = posy+height;vertices[3].z = 0.0f;
+
+			glEnableClientState(GL_VERTEX_ARRAY);
+			glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+
+			glVertexPointer(3, GL_FLOAT, GLsizei(sizeof(TexturedVertex)), &vertices[0].x);
+			glTexCoordPointer(2, GL_FLOAT, GLsizei(sizeof(TexturedVertex)), &vertices[0].u);
+
+			glDrawArrays(GL_TRIANGLE_STRIP,0,4);
+
+			glDisableClientState(GL_VERTEX_ARRAY);
+			glDisableClientState(GL_TEXTURE_COORD_ARRAY);
+
+			glDisable(GL_BLEND);
+			glDisable(GL_TEXTURE_2D);
+
+			delete [] vertices;
+		}
+
+
+		void LegacyOpengGLRenderManager::DrawSprite(Sprite* sprite)
+		{
+			glPushMatrix();
+
+			glTranslatef(sprite->posX,sprite->posY,0.0f);
+
+			bindTexture(sprite->imageName);
+			glEnable(GL_TEXTURE_2D);
+			glEnable(GL_BLEND);
+			glColor3f(1,1,1);
+
+			glEnableClientState(GL_VERTEX_ARRAY);
+			glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+
+			glVertexPointer(3, GL_FLOAT, GLsizei(sizeof(TexturedVertex)), &sprite->vertices[0].x);
+			glTexCoordPointer(2, GL_FLOAT, GLsizei(sizeof(TexturedVertex)), &sprite->vertices[0].u);
+
+			glDrawArrays(GL_TRIANGLE_STRIP,0,4);
+
+			glDisableClientState(GL_VERTEX_ARRAY);
+			glDisableClientState(GL_TEXTURE_COORD_ARRAY);
+
+			glDisable(GL_TEXTURE_2D);
+			glDisable(GL_BLEND);
+			glPopMatrix();
+		}
+
+		void LegacyOpengGLRenderManager::DrawSprite(Sprite* sprite,float posx,float posy)
+		{
+			glPushMatrix();
+
+			glTranslatef(posx,posy,0.0f);
+
+			bindTexture(sprite->imageName);
+			glEnable(GL_TEXTURE_2D);
+			glEnable(GL_BLEND);
+			glColor3f(1,1,1);
+
+			glEnableClientState(GL_VERTEX_ARRAY);
+			glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+
+			glVertexPointer(3, GL_FLOAT, GLsizei(sizeof(TexturedVertex)), &sprite->vertices[0].x);
+			glTexCoordPointer(2, GL_FLOAT, GLsizei(sizeof(TexturedVertex)), &sprite->vertices[0].u);
+
+			glDrawArrays(GL_TRIANGLE_STRIP,0,4);
+
+			glDisableClientState(GL_VERTEX_ARRAY);
+			glDisableClientState(GL_TEXTURE_COORD_ARRAY);
+
+			glDisable(GL_TEXTURE_2D);
+			glDisable(GL_BLEND);
+			glPopMatrix();
+		}
+
+		
+		/*void LegacyOpengGLRenderManager::drawImage(Image* image)
+		{
+			bindTexture(image);
+			glEnable(GL_TEXTURE_2D);
+			glEnable(GL_BLEND);
+			glColor4f(1.0f, 1.0f, 1.0f,1.0f);
+
+			TexturedVertex *vertices = new TexturedVertex[4];
+			vertices[0].u = 0.0f;vertices[0].v = 0.0f;vertices[0].x = 0.0f;vertices[0].y = 0.0f;vertices[0].z = 0.0f;
+			vertices[1].u = 0.0f;vertices[1].v = 1.0f;vertices[1].x = 0.0f;vertices[1].y = image->_height;vertices[1].z = 0.0f;
+			vertices[2].u = 1.0f;vertices[2].v = 0.0f;vertices[2].x = image->_width;vertices[2].y = 0;vertices[2].z = 0.0f;
+			vertices[3].u = 1.0f;vertices[3].v = 1.0f;vertices[3].x = image->_width = image->_height;vertices[3].z = 0.0f;
+
+			glEnableClientState(GL_VERTEX_ARRAY);
+			glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+
+			glVertexPointer(3, GL_FLOAT, GLsizei(sizeof(TexturedVertex)), &vertices[0].x);
+			glTexCoordPointer(2, GL_FLOAT, GLsizei(sizeof(TexturedVertex)), &vertices[0].u);
+
+			glDrawArrays(GL_TRIANGLE_STRIP,0,4);
+
+			glDisableClientState(GL_VERTEX_ARRAY);
+			glDisableClientState(GL_TEXTURE_COORD_ARRAY);
+
+			glDisable(GL_BLEND);
+			glDisable(GL_TEXTURE_2D);
+
+			delete [] vertices;
+		}
+
+		void LegacyOpengGLRenderManager::drawImage(Image* image,int posx,int posy)
+		{
+			bindTexture(image);
+			glEnable(GL_TEXTURE_2D);
+			glEnable(GL_BLEND);
+			glColor4f(1.0f, 1.0f, 1.0f,1.0f);
+
+			TexturedVertex *vertices = new TexturedVertex[4];
+			vertices[0].u = 0.0f;vertices[0].v = 0.0f;vertices[0].x = posx;vertices[0].y = posy;vertices[0].z = 0.0f;
+			vertices[1].u = 0.0f;vertices[1].v = 1.0f;vertices[1].x = posx;vertices[1].y = posy+image->_height;vertices[1].z = 0.0f;
+			vertices[2].u = 1.0f;vertices[2].v = 0.0f;vertices[2].x = posx+image->_width;vertices[2].y = posy;vertices[2].z = 0.0f;
+			vertices[3].u = 1.0f;vertices[3].v = 1.0f;vertices[3].x = posx+image->_width;vertices[3].y = posy+image->_height;vertices[3].z = 0.0f;
+
+			glEnableClientState(GL_VERTEX_ARRAY);
+			glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+
+			glVertexPointer(3, GL_FLOAT, GLsizei(sizeof(TexturedVertex)), &vertices[0].x);
+			glTexCoordPointer(2, GL_FLOAT, GLsizei(sizeof(TexturedVertex)), &vertices[0].u);
+
+			glDrawArrays(GL_TRIANGLE_STRIP,0,4);
+
+			glDisableClientState(GL_VERTEX_ARRAY);
+			glDisableClientState(GL_TEXTURE_COORD_ARRAY);
+
+			glDisable(GL_BLEND);
+			glDisable(GL_TEXTURE_2D);
+
+			delete [] vertices;
+		}
+
+		void LegacyOpengGLRenderManager::drawImage(Image* image,int posx,int posy,int width,int height)
+		{
+			bindTexture(image);
+			glEnable(GL_TEXTURE_2D);
+			glEnable(GL_BLEND);
+			glColor4f(1.0f, 1.0f, 1.0f,1.0f);
+
+			TexturedVertex *vertices = new TexturedVertex[4];
+			vertices[0].u = 0.0f;vertices[0].v = 0.0f;vertices[0].x = posx;vertices[0].y = posy;vertices[0].z = 0.0f;
+			vertices[1].u = 0.0f;vertices[1].v = 1.0f;vertices[1].x = posx;vertices[1].y = posy+height;vertices[1].z = 0.0f;
+			vertices[2].u = 1.0f;vertices[2].v = 0.0f;vertices[2].x = posx+width;vertices[2].y = posy;vertices[2].z = 0.0f;
+			vertices[3].u = 1.0f;vertices[3].v = 1.0f;vertices[3].x = posx+width;vertices[3].y = posy+height;vertices[3].z = 0.0f;
+
+			glEnableClientState(GL_VERTEX_ARRAY);
+			glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+
+			glVertexPointer(3, GL_FLOAT, GLsizei(sizeof(TexturedVertex)), &vertices[0].x);
+			glTexCoordPointer(2, GL_FLOAT, GLsizei(sizeof(TexturedVertex)), &vertices[0].u);
+
+			glDrawArrays(GL_TRIANGLE_STRIP,0,4);
+
+			glDisableClientState(GL_VERTEX_ARRAY);
+			glDisableClientState(GL_TEXTURE_COORD_ARRAY);
+
+			glDisable(GL_BLEND);
+			glDisable(GL_TEXTURE_2D);
+
+			delete [] vertices;
+		}
+
+		void LegacyOpengGLRenderManager::drawSprite(Sprite* sprite)
+		{
+			glPushMatrix();
+
+			glTranslatef(sprite->posX,sprite->posY,0.0f);
+
+			bindTexture(sprite->imageName);
+			glEnable(GL_TEXTURE_2D);
+			glEnable(GL_BLEND);
+			glColor3f(1,1,1);
+
+			glEnableClientState(GL_VERTEX_ARRAY);
+			glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+
+			glVertexPointer(3, GL_FLOAT, GLsizei(sizeof(TexturedVertex)), &sprite->vertices[0].x);
+			glTexCoordPointer(2, GL_FLOAT, GLsizei(sizeof(TexturedVertex)), &sprite->vertices[0].u);
+
+			glDrawArrays(GL_TRIANGLE_STRIP,0,4);
+
+			glDisableClientState(GL_VERTEX_ARRAY);
+			glDisableClientState(GL_TEXTURE_COORD_ARRAY);
+
+			glDisable(GL_TEXTURE_2D);
+			glDisable(GL_BLEND);
+			glPopMatrix();
+		}
+
+		void LegacyOpengGLRenderManager::drawSprite(Sprite* sprite,float posx,float posy)
+		{
+			glPushMatrix();
+
+			glTranslatef(posx,posy,0.0f);
+
+			bindTexture(sprite->imageName);
+			glEnable(GL_TEXTURE_2D);
+			glEnable(GL_BLEND);
+			glColor3f(1,1,1);
+
+			glEnableClientState(GL_VERTEX_ARRAY);
+			glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+
+			glVertexPointer(3, GL_FLOAT, GLsizei(sizeof(TexturedVertex)), &sprite->vertices[0].x);
+			glTexCoordPointer(2, GL_FLOAT, GLsizei(sizeof(TexturedVertex)), &sprite->vertices[0].u);
+
+			glDrawArrays(GL_TRIANGLE_STRIP,0,4);
+
+			glDisableClientState(GL_VERTEX_ARRAY);
+			glDisableClientState(GL_TEXTURE_COORD_ARRAY);
+
+			glDisable(GL_TEXTURE_2D);
+			glDisable(GL_BLEND);
+			glPopMatrix();
+		}
+
+		void LegacyOpengGLRenderManager::drawSprite3D(Sprite3D* sprite)
+		{
+			glPushMatrix();
+
+			glTranslatef(sprite->posX,sprite->posY,sprite->posZ);
+			glRotatef(sprite->rotationX,1.0f,0.0f,0.0f);
+			glRotatef(sprite->rotationY,0.0f,1.0f,0.0f);
+			glRotatef(sprite->rotationZ,0.0f,0.0f,1.0f);
+			glScalef(sprite->scaleX,sprite->scaleY,sprite->scaleZ);
+
+			int posx = 0;
+			int posy = 0;
+
+			for (int y = sprite->height/2;y > -sprite->height/2;y--)
+			{
+				for (int x = -sprite->width/2;x < sprite->width/2;x++)
+				{
+					unsigned int colour = sprite->colours[posx + posy*sprite->height];
+					if(colour != 0)
+						drawCube(colour,Math::Vector3(x,y,0.0f),Math::Vector3(1.0f,1.0f,1.0f),Math::Vector3(0.0f,0.0f,0.0f));
+					posx++;
+				}
+				posx = 0;
+				posy++;
+			}
+
+			glPopMatrix();
+		}
+
+		//shapes
+		/*void LegacyOpengGLRenderManager::drawCube(unsigned int color,Math::Vector3 position,Math::Vector3 scale,Math::Vector3 rotation)
+		{
+			glPushMatrix();
+
+			glTranslatef(position.x,position.y,position.z);
+			glRotatef(rotation.x,1.0f,0.0f,0.0f);
+			glRotatef(rotation.y,0.0f,1.0f,0.0f);
+			glRotatef(rotation.z,0.0f,0.0f,1.0f);
+			
+
+			glColor4ub(color&0xff, (color>>8)&0xff, (color>>16)&0xff, (color>>24)&0xff);
+
+			glEnableClientState(GL_VERTEX_ARRAY);
+			glVertexPointer(3, GL_FLOAT, 0, cubeVert);
+
+			glDrawArrays(GL_TRIANGLES,0,36);
+
+			glDisableClientState(GL_VERTEX_ARRAY);
+						
+			glPopMatrix();
+		}
+
+		void LegacyOpengGLRenderManager::DrawCubeTextured(Image* texture,Math::Vector3 position,Math::Vector3 scale,Math::Vector3 rotation)
+		{
+			glPushMatrix();
+
+			glTranslatef(position.x,position.y,position.z);
+			glRotatef(rotation.x,1.0f,0.0f,0.0f);
+			glRotatef(rotation.y,0.0f,1.0f,0.0f);
+			glRotatef(rotation.z,0.0f,0.0f,1.0f);
+			
+
+			glColor4ub(255, 255, 255, 255);
+
+			glBindTexture(GL_TEXTURE_2D, texture->_id);
+			glEnable(GL_TEXTURE_2D);
+
+			glEnableClientState(GL_VERTEX_ARRAY);
+			glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+
+			glTexCoordPointer(2,GL_FLOAT,0, cubeST);
+			glVertexPointer(3, GL_FLOAT, 0, cubeVert);
+
+			glDrawArrays(GL_TRIANGLES,0,36);
+
+			glDisableClientState(GL_VERTEX_ARRAY);
+			glDisableClientState(GL_TEXTURE_COORD_ARRAY);
+
+			glDisable(GL_TEXTURE_2D);
+
+			glPopMatrix();
+		}*/
 	}
 }

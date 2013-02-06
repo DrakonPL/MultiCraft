@@ -3,6 +3,7 @@
 
 #ifdef AURORA_PC
 #include <Aurora/Graphics/opengl/LegacyOpenGLRenderManager.h>
+//#include <Aurora/Graphics/opengl/OpenGLRenderManager.h>
 #endif
 
 #ifdef AURORA_PSP
@@ -21,6 +22,8 @@
 #include <Aurora/Graphics/opengl/PSGLRenderManager.h>
 #endif
 
+//Uncomment this to use the new OpenGL renderer where appropriate
+//#define OPENGL_NEW
 
 namespace Aurora
 {
@@ -33,7 +36,7 @@ namespace Aurora
 			if(_renderManager == 0)
 			{
 #ifdef AURORA_PC
-				_renderManager = new LegacyOpengGLRenderManager();
+					_renderManager = new LegacyOpengGLRenderManager();
 #endif
 
 #ifdef AURORA_PSP

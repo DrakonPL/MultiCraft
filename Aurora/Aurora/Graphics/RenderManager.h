@@ -152,17 +152,14 @@ namespace Aurora
 			virtual void DrawVertexObject(void* vertexObject,int vertexCound,bool textured,VertexType vertexType,VertexPrimitive vertecPrimitive) = 0;
 
 			//2D drawing
-			/*virtual void drawImage(Image* image) = 0;
-			virtual void drawImage(Image* image,int posx,int posy) = 0;
-			virtual void drawImage(Image* image,int posx,int posy,int width,int height) = 0;
+			virtual void DrawImage(Image* image) = 0;
+			virtual void DrawImage(Image* image,int posx,int posy) = 0;
+			virtual void DrawImage(Image* image,int posx,int posy,int width,int height) = 0;
+			
+			virtual void DrawSprite(Sprite* sprite) = 0;
+			virtual void DrawSprite(Sprite* sprite,float posx,float posy) = 0;
 
-			virtual void drawSprite(Sprite* sprite) = 0;
-			virtual void drawSprite(Sprite* sprite,float posx,float posy) = 0;
-
-			void drawSpriteAnimation(SpriteAnimation* spriteAnimation);
-
-			virtual void drawText(TrueTypeFont* font,float x, float y, const char *text, int align, unsigned int col) = 0;
-
+			/*
 			//3D drawing
 			virtual void drawSprite3D(Sprite3D* sprite) = 0;
 

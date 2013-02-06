@@ -2,6 +2,8 @@
 #include <Aurora/Utils/GameManager.h>
 
 #include "Tests/SimpleTest.h"
+#include "Tests/ThreadTest.h"
+#include "Tests/ScreenSizeTest.h"
 
 
 class ExampleGameManager : public GameManager

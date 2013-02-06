@@ -91,7 +91,7 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>.\..\..\libs\sfml\lib;.\..\..\libs\glew\lib;.\..\..\libs\zlib\lib;.\..\..\libs\bullet\win\lib\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>glew32s.lib;sfml-system-s-d.lib;sfml-window-s-d.lib;sfml-main-d.lib;sfml-audio-s-d.lib;glu32.lib;opengl32.lib;ws2_32.lib;zdll.lib;LinearMath_debug.lib;BulletCollision_debug.lib;BulletDynamics_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -189,8 +189,6 @@ xcopy $(SolutionDir)\..\..\Assets  $(ProjectDir)\Assets /Y /E /I</Command>
     <ClCompile Include="..\..\Aurora\Graphics\models\ModelMesh.cpp" />
     <ClCompile Include="..\..\Aurora\Graphics\models\ModelObj2.cpp" />
     <ClCompile Include="..\..\Aurora\Graphics\opengl\LegacyOpenGLRenderManager.cpp" />
-    <ClCompile Include="..\..\Aurora\Graphics\opengl\OpenGLRenderManager.cpp" />
-    <ClCompile Include="..\..\Aurora\Graphics\opengl\shaders\shader.cpp" />
     <ClCompile Include="..\..\Aurora\Graphics\opengl\VertexBuffer.cpp" />
     <ClCompile Include="..\..\Aurora\Graphics\RenderManager.cpp" />
     <ClCompile Include="..\..\Aurora\Graphics\RenderTexture.cpp" />
@@ -258,6 +256,7 @@ xcopy $(SolutionDir)\..\..\Assets  $(ProjectDir)\Assets /Y /E /I</Command>
     <ClCompile Include="..\..\libs\libzip\zip.c" />
     <ClCompile Include="..\..\libs\tinyxml\tinyxml2.cpp" />
     <ClCompile Include="..\..\Starter.cpp" />
+    <ClCompile Include="..\..\Tests\ScreenSizeTest.cpp" />
     <ClCompile Include="..\..\Tests\SimpleTest.cpp" />
     <ClCompile Include="..\..\Tests\ThreadTest.cpp" />
   </ItemGroup>
@@ -275,8 +274,6 @@ xcopy $(SolutionDir)\..\..\Assets  $(ProjectDir)\Assets /Y /E /I</Command>
     <ClInclude Include="..\..\Aurora\Graphics\models\ModelMesh.h" />
     <ClInclude Include="..\..\Aurora\Graphics\models\ModelObj2.h" />
     <ClInclude Include="..\..\Aurora\Graphics\opengl\LegacyOpenGLRenderManager.h" />
-    <ClInclude Include="..\..\Aurora\Graphics\opengl\OpenGLRenderManager.h" />
-    <ClInclude Include="..\..\Aurora\Graphics\opengl\shaders\shader.h" />
     <ClInclude Include="..\..\Aurora\Graphics\opengl\VertexBuffer.h" />
     <ClInclude Include="..\..\Aurora\Graphics\RenderManager.h" />
     <ClInclude Include="..\..\Aurora\Graphics\RenderTexture.h" />
@@ -352,12 +349,11 @@ xcopy $(SolutionDir)\..\..\Assets  $(ProjectDir)\Assets /Y /E /I</Command>
     <ClInclude Include="..\..\libs\libzip\unzip.h" />
     <ClInclude Include="..\..\libs\libzip\zip.h" />
     <ClInclude Include="..\..\libs\tinyxml\tinyxml2.h" />
+    <ClInclude Include="..\..\Tests\ScreenSizeTest.h" />
     <ClInclude Include="..\..\Tests\SimpleTest.h" />
-    <ClInclude Include="..\..\Tests\ThreadsTest.h" />
+    <ClInclude Include="..\..\Tests\ThreadTest.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\Aurora\Graphics\opengl\shaders\basic.frag" />
-    <None Include="..\..\Aurora\Graphics\opengl\shaders\basic.vert" />
     <None Include="..\..\Aurora\Network\Selector.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

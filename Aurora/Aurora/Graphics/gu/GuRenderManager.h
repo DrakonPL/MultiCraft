@@ -91,22 +91,18 @@ namespace Aurora
 			void* CreateVertexObject(VertexType vertexType,int size);
 			void DrawVertexObject(void* vertexObject,int vertexCound,bool textured,VertexType vertexType,VertexPrimitive vertecPrimitive);
 
-			/*void drawImage(Image* image);
-			void drawImage(Image* image,int posx,int posy);
-			void drawImage(Image* image,int posx,int posy,int width,int height);
-
-			void drawSprite(Sprite* sprite);
-			void drawSprite(Sprite* sprite,float posx,float posy);
-			void drawSprite3D(Sprite3D* sprite);
-
-			void SetTextOrtho();
-			void drawText(TrueTypeFont* font,float x, float y, const char *text, int align, unsigned int col);
+			//2D drawing
+			void DrawImage(Image* image);
+			void DrawImage(Image* image,int posx,int posy);
+			void DrawImage(Image* image,int posx,int posy,int width,int height);
 			
+			void DrawSprite(Sprite* sprite);
+			void DrawSprite(Sprite* sprite,float posx,float posy);
 
 			//shapes
+			/*
 			void drawCube(unsigned int color,Math::Vector3 position,Math::Vector3 scale,Math::Vector3 rotation);
-			void DrawCubeTextured(Image* texture,Math::Vector3 position,Math::Vector3 scale,Math::Vector3 rotation);
-			void DrawModelObj(ModelObj *model,Math::Vector3 position,Math::Vector3 scale,Math::Vector3 rotation);*/
+			void DrawCubeTextured(Image* texture,Math::Vector3 position,Math::Vector3 scale,Math::Vector3 rotation);*/
 		};
 	}
 }

@@ -52,9 +52,6 @@
     <Filter Include="Aurora\Graphics\models\cameras">
       <UniqueIdentifier>{a9f34a8a-308d-44cf-b9f2-1db85dc85ba9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Aurora\Graphics\opengl\shaders">
-      <UniqueIdentifier>{fe5eaf11-da58-40d2-a791-7d949f446d5f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Libs\tinyxml">
       <UniqueIdentifier>{b997fd08-8db0-4307-b803-17edce89e09c}</UniqueIdentifier>
     </Filter>
@@ -271,12 +268,6 @@
     <ClCompile Include="..\..\Aurora\Graphics\opengl\LegacyOpenGLRenderManager.cpp">
       <Filter>Aurora\Graphics\opengl</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Graphics\opengl\OpenGLRenderManager.cpp">
-      <Filter>Aurora\Graphics\opengl</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Aurora\Graphics\opengl\shaders\shader.cpp">
-      <Filter>Aurora\Graphics\opengl\shaders</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Aurora\System\Timer.cpp">
       <Filter>Aurora\System</Filter>
     </ClCompile>
@@ -312,6 +303,9 @@
     </ClCompile>
     <ClCompile Include="..\..\Aurora\Math\MathUtils.cpp">
       <Filter>Aurora\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tests\ScreenSizeTest.cpp">
+      <Filter>Tests</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -359,9 +353,6 @@
     </ClInclude>
     <ClInclude Include="..\..\Aurora\Graphics\Vertex.h">
       <Filter>Aurora\Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\opengl\OpenGLRenderManager.h">
-      <Filter>Aurora\Graphics\opengl</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Aurora\Math\BoundingBox.h">
       <Filter>Aurora\Math</Filter>
@@ -552,17 +543,11 @@
     <ClInclude Include="..\..\Aurora\Graphics\opengl\LegacyOpenGLRenderManager.h">
       <Filter>Aurora\Graphics\opengl</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\opengl\shaders\shader.h">
-      <Filter>Aurora\Graphics\opengl\shaders</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Aurora\System\Timer.h">
       <Filter>Aurora\System</Filter>
     </ClInclude>
     <ClInclude Include="..\..\libs\tinyxml\tinyxml2.h">
       <Filter>Libs\tinyxml</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Tests\ThreadsTest.h">
-      <Filter>Tests</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Aurora\Threads\Lock.hpp">
       <Filter>Aurora\Threads</Filter>
@@ -591,16 +576,16 @@
     <ClInclude Include="..\..\Aurora\Math\MathUtils.h">
       <Filter>Aurora\Math</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Tests\ScreenSizeTest.h">
+      <Filter>Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tests\ThreadTest.h">
+      <Filter>Tests</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\Aurora\Network\Selector.inl">
       <Filter>Aurora\Network</Filter>
-    </None>
-    <None Include="..\..\Aurora\Graphics\opengl\shaders\basic.vert">
-      <Filter>Aurora\Graphics\opengl\shaders</Filter>
-    </None>
-    <None Include="..\..\Aurora\Graphics\opengl\shaders\basic.frag">
-      <Filter>Aurora\Graphics\opengl\shaders</Filter>
     </None>
   </ItemGroup>
 </Project>

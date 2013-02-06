@@ -15,125 +15,6 @@
 #define	FRAME_BUFFER_WIDTH 		512
 #define FRAME_BUFFER_SIZE		FRAME_BUFFER_WIDTH*SCR_HEIGHT*PIXEL_SIZE
 
-/*typedef struct
-{
-//unsigned char u, v;
-//unsigned short color __attribute__((aligned(2)));
-char x, y, z;
-}__attribute__((packed)) Vertex8;
-
-struct Vertex32
-{
-	float x,y,z;
-};
-
-struct TextureVertex
-{
-	float u, v;
-	float x,y,z;
-};*/
-
-/*struct TextureVertex __attribute__((aligned(16))) _texturedCube[12*3] =
-{
-	{0, 0, -1,-1, 1}, // 0
-	{1, 0, -1, 1, 1}, // 4
-	{1, 1,  1, 1, 1}, // 5
-
-	{0, 0, -1,-1, 1}, // 0
-	{1, 1, 1, 1, 1}, // 5
-	{0, 1, 1,-1, 1}, // 1
-
-	{0, 0, -1,-1,-1}, // 3
-	{1, 0,  1,-1,-1}, // 2
-	{1, 1,  1, 1,-1}, // 6
-
-	{0, 0, -1,-1,-1}, // 3
-	{1, 1,  1, 1,-1}, // 6
-	{0, 1, -1, 1,-1}, // 7
-
-	{0, 0,  1,-1,-1}, // 0
-	{1, 0,  1,-1, 1}, // 3
-	{1, 1,  1, 1, 1}, // 7
-
-	{0, 0,  1,-1,-1}, // 0
-	{1, 1,  1, 1, 1}, // 7
-	{0, 1,  1, 1,-1}, // 4
-
-	{0, 0, -1,-1,-1}, // 0
-	{1, 0, -1, 1,-1}, // 3
-	{1, 1, -1, 1, 1}, // 7
-
-	{0, 0, -1,-1,-1}, // 0
-	{1, 1, -1, 1, 1}, // 7
-	{0, 1, -1,-1, 1}, // 4
-
-	{0, 0, -1, 1,-1}, // 0
-	{1, 0,  1, 1,-1}, // 1
-	{1, 1,  1, 1, 1}, // 2
-
-	{0, 0, -1, 1,-1}, // 0
-	{1, 1,  1, 1, 1}, // 2
-	{0, 1, -1, 1, 1}, // 3
-
-	{0, 0, -1,-1,-1}, // 4
-	{1, 0, -1,-1, 1}, // 7
-	{1, 1,  1,-1, 1}, // 6
-
-	{0, 0, -1,-1,-1}, // 4
-	{1, 1,  1,-1, 1}, // 6
-	{0, 1,  1,-1,-1}, // 5
-};
-
-struct Vertex32 __attribute__((aligned(16))) _cubeVertices[12*3] =
-{
-	{-0.5f,-0.5f, 0.5f}, // 0
-	{-0.5f, 0.5f, 0.5f}, // 4
-	{ 0.5f, 0.5f, 0.5f}, // 5
-
-	{-0.5f,-0.5f, 0.5f}, // 0
-	{ 0.5f, 0.5f, 0.5f}, // 5
-	{ 0.5f,-0.5f, 0.5f}, // 1
-
-	{-0.5f,-0.5f,-0.5f}, // 3
-	{ 0.5f,-0.5f,-0.5f}, // 2
-	{ 0.5f, 0.5f,-0.5f}, // 6
-
-	{-0.5f,-0.5f,-0.5f}, // 3
-	{ 0.5f, 0.5f,-0.5f}, // 6
-	{-0.5f, 0.5f,-0.5f}, // 7
-
-	{ 0.5f,-0.5f,-0.5f}, // 0
-	{ 0.5f,-0.5f, 0.5f}, // 3
-	{ 0.5f, 0.5f, 0.5f}, // 7
-
-	{ 0.5f,-0.5f,-0.5f}, // 0
-	{ 0.5f, 0.5f, 0.5f}, // 7
-	{ 0.5f, 0.5f,-0.5f}, // 4
-
-	{-0.5f,-0.5f,-0.5f}, // 0
-	{-0.5f, 0.5f,-0.5f}, // 3
-	{-0.5f, 0.5f, 0.5f}, // 7
-
-	{-0.5f,-0.5f,-0.5f}, // 0
-	{-0.5f, 0.5f, 0.5f}, // 7
-	{-0.5f,-0.5f, 0.5f}, // 4
-
-	{-0.5f, 0.5f,-0.5f}, // 0
-	{ 0.5f, 0.5f,-0.5f}, // 1
-	{ 0.5f, 0.5f, 0.5f}, // 2
-
-	{-0.5f, 0.5f,-0.5f}, // 0
-	{ 0.5f, 0.5f, 0.5f}, // 2
-	{-0.5f, 0.5f, 0.5f}, // 3
-
-	{-0.5f,-0.5f,-0.5f}, // 4
-	{-0.5f,-0.5f, 0.5f}, // 7
-	{ 0.5f,-0.5f, 0.5f}, // 6
-
-	{-0.5f,-0.5f,-0.5f}, // 4
-	{ 0.5f,-0.5f, 0.5f}, // 6
-	{ 0.5f,-0.5f,-0.5f}, // 5
-};*/
 
 static unsigned int __attribute__((aligned(16))) _list[262144];
 
@@ -633,72 +514,7 @@ namespace Aurora
 			}
 		}
 		
-		/*void GuRenderManager::_createModelObjVertices(ModelObj* model)
-		{
-			for (unsigned int i = 0; i < model->mMeshes.size();i++)
-			{
-				ObjMesh *mesh = model->mMeshes[i];
-
-				//build mesh vertices
-				mesh->meshVertices =  (TexturesPSPVertex*)memalign(16,( mesh->mFace.size() * 3) * sizeof(TexturesPSPVertex));
-				mesh->triangleCount = mesh->mFace.size();
-				mesh->vertexCount = mesh->mFace.size() * 3;
-
-				int j =0;
-
-				for(unsigned int f = 0;f < mesh->mFace.size();f++)
-				{
-					TexturesPSPVertex vert1;
-					vert1.u = model->allUVMap[mesh->mUVFace[f].x].u;
-					vert1.v = model->allUVMap[mesh->mUVFace[f].x].v;
-					vert1.x = model->allVertex[mesh->mFace[f].x].x;
-					vert1.y = model->allVertex[mesh->mFace[f].x].y;
-					vert1.z = model->allVertex[mesh->mFace[f].x].z;
-					memcpy(&mesh->meshVertices[j],&vert1,sizeof(TexturesPSPVertex));
-
-					mesh->aabb.expandToInclude(model->allVertex[mesh->mFace[f].x]);
-					j++;
-
-					TexturesPSPVertex vert2;
-					vert2.u = model->allUVMap[mesh->mUVFace[f].y].u;
-					vert2.v = model->allUVMap[mesh->mUVFace[f].y].v;
-					vert2.x = model->allVertex[mesh->mFace[f].y].x;
-					vert2.y = model->allVertex[mesh->mFace[f].y].y;
-					vert2.z = model->allVertex[mesh->mFace[f].y].z;
-					memcpy(&mesh->meshVertices[j],&vert2,sizeof(TexturesPSPVertex));
-
-					mesh->aabb.expandToInclude(model->allVertex[mesh->mFace[f].y]);
-					j++;
-
-					TexturesPSPVertex vert3;
-					vert3.u = model->allUVMap[mesh->mUVFace[f].z].u;
-					vert3.v = model->allUVMap[mesh->mUVFace[f].z].v;
-					vert3.x = model->allVertex[mesh->mFace[f].z].x;
-					vert3.y = model->allVertex[mesh->mFace[f].z].y;
-					vert3.z = model->allVertex[mesh->mFace[f].z].z;
-					memcpy(&mesh->meshVertices[j],&vert3,sizeof(TexturesPSPVertex));
-
-					mesh->aabb.expandToInclude(model->allVertex[mesh->mFace[f].z]);
-					j++;
-
-				}
-				mesh->mUVFace.clear();
-				mesh->mFace.clear();
-				mesh->mNormalFace.clear();
-
-				//clear the cache or there will be some errors
-				//sceKernelDcacheWritebackInvalidateRange(mesh->meshVertices,( mesh->mFace.size() * 3) * sizeof(TexturesPSPVertex));
-				sceKernelDcacheWritebackInvalidateAll();
-			}
-
-			model->allVertex.clear();
-			model->allNormal.clear();
-			model->allUVMap.clear();
-
-			sceKernelDcacheWritebackInvalidateAll();
-		}*/
-
-		/*void GuRenderManager::drawImage(Image* image)
+		void GuRenderManager::DrawImage(Image* image)
 		{
 			bindTexture(image);
 
@@ -718,21 +534,35 @@ namespace Aurora
 			sceGuDisable(GU_BLEND);
 			sceGuDisable(GU_TEXTURE_2D);
 		}
-
-		void GuRenderManager::drawImage(Image* image,int posx,int posy)
+		
+		void GuRenderManager::DrawImage(Image* image,int posx,int posy)
 		{
 			bindTexture(image);
-		}
 
-		void GuRenderManager::drawImage(Image* image,int posx,int posy,int width,int height)
+			sceGuEnable(GU_TEXTURE_2D);
+			sceGuEnable(GU_BLEND);
+
+			TexturedVertex* vertices = (TexturedVertex*)sceGuGetMemory(4 * sizeof(TexturedVertex));
+
+			vertices[0].u = 0.0f;vertices[0].v = 0.0f;vertices[0].x = posx;vertices[0].y = posy;vertices[0].z = 0.0f;
+			vertices[1].u = 0.0f;vertices[1].v = 1.0f;vertices[1].x = posx;vertices[1].y = posy+image->_height;vertices[1].z = 0.0f;
+			vertices[2].u = 1.0f;vertices[2].v = 0.0f;vertices[2].x = posx+image->_width;vertices[2].y = posy;vertices[2].z = 0.0f;
+			vertices[3].u = 1.0f;vertices[3].v = 1.0f;vertices[3].x = posx+image->_width;vertices[3].y = posy+image->_height;vertices[3].z = 0.0f;
+
+			sceGuColor(0xffffffff);
+			sceGumDrawArray(GU_TRIANGLE_STRIP, GU_TEXTURE_32BITF|GU_VERTEX_32BITF|GU_TRANSFORM_3D, 4, 0, vertices);
+
+			sceGuDisable(GU_BLEND);
+			sceGuDisable(GU_TEXTURE_2D);
+		}
+		
+		void GuRenderManager::DrawImage(Image* image,int posx,int posy,int width,int height)
 		{
 			bindTexture(image);
 
 			sceGuEnable(GU_TEXTURE_2D);
 			sceGuEnable(GU_BLEND);
 			
-			sceGumDrawArray(GU_TRIANGLE_STRIP, GU_TEXTURE_32BITF|GU_VERTEX_32BITF|GU_TRANSFORM_3D, 4, 0, vertices);
-
 			TexturedVertex* vertices = (TexturedVertex*)sceGuGetMemory(4 * sizeof(TexturedVertex));
 
 			vertices[0].u = 0.0f; vertices[0].v = 0.0f; vertices[0].x = posx; vertices[0].y = posy; vertices[0].z =0;
@@ -746,78 +576,8 @@ namespace Aurora
 			sceGuDisable(GU_BLEND);
 			sceGuDisable(GU_TEXTURE_2D);
 		}
-
-		float g_tabStops2[4] = {150, 210, 270, 330};
-		void GuRenderManager::drawText(TrueTypeFont* font,float x, float y, const char *text, int align, unsigned int col)
-		{
-			if (!font->g_ftex) return;
-			if (!text) return;
-
-			_currentTexture = font->g_ftex;
-
-			y = _height - y;
-
-			if (align == Graphics::ALIGN_CENTER)
-				x -= font->getTextLength(font->g_cdata, text)/2;
-			else if (align == Graphics::ALIGN_RIGHT)
-				x -= font->getTextLength(font->g_cdata, text);
-
-			sceGuTexMode(GU_PSM_8888,0,0,0);
-			sceGuTexImage(0,256,256,256,font->bitmap);
-
-			sceGuTexFunc(GU_TFX_MODULATE, GU_TCC_RGBA);
-			sceGuTexFilter(GU_NEAREST,GU_NEAREST);
-			sceGuTexOffset( 0.0f, 0.0f );
-			sceGuTexWrap(GU_REPEAT,GU_REPEAT);
-
-			sceGuColor(GU_RGBA(col&0xff, (col>>8)&0xff, (col>>16)&0xff, (col>>24)&0xff));
-			sceGuEnable(GU_TEXTURE_2D);
-			sceGuEnable(GU_BLEND);
-
-			const float ox = x;
-
-			while (*text)
-			{
-				int c = (unsigned char)*text;
-				if (c == '\t')
-				{
-					for (int i = 0; i < 4; ++i)
-					{
-						if (x < g_tabStops2[i]+ox)
-						{
-							x = g_tabStops2[i]+ox;
-							break;
-						}
-					}
-				}
-				else if (c >= 32 && c < 128)
-				{
-					stbtt_aligned_quad2 q;
-					font->getBakedQuad(font->g_cdata, 256,256, c-32, &x,&y,&q);
-
-					TexturedVertex* vertices = (TexturedVertex*)sceGuGetMemory(6 * sizeof(TexturedVertex));
-
-					vertices[0].u = q.s0; vertices[0].v = q.t0; vertices[0].x =q.x0; vertices[0].y = q.y0; vertices[0].z =0;
-					vertices[1].u = q.s1; vertices[1].v = q.t1; vertices[1].x =q.x1; vertices[1].y = q.y1; vertices[1].z =0;
-					vertices[2].u = q.s1; vertices[2].v = q.t0; vertices[2].x =q.x1; vertices[2].y = q.y0; vertices[2].z =0;
-
-					vertices[3].u = q.s0; vertices[3].v = q.t0; vertices[3].x =q.x0; vertices[3].y = q.y0; vertices[3].z =0;
-					vertices[4].u = q.s0; vertices[4].v = q.t1; vertices[4].x =q.x0; vertices[4].y = q.y1; vertices[4].z =0;
-					vertices[5].u = q.s1; vertices[5].v = q.t1; vertices[5].x =q.x1; vertices[5].y = q.y1; vertices[5].z =0;
-
-					sceGumDrawArray(GU_TRIANGLES, GU_TEXTURE_32BITF|GU_VERTEX_32BITF|GU_TRANSFORM_3D, 6, 0, vertices);
-				}
-				++text;
-			}
-
-
-			sceGuDisable(GU_BLEND);
-			sceGuDisable(GU_TEXTURE_2D);
-
-			sceGuColor(0xffffffff);
-		}
-
-		void GuRenderManager::drawSprite(Sprite* sprite)
+		
+		void GuRenderManager::DrawSprite(Sprite* sprite)
 		{
 			bindTexture(sprite->imageName);
 
@@ -828,6 +588,7 @@ namespace Aurora
 
 			sceGuEnable(GU_TEXTURE_2D);
 			sceGuEnable(GU_BLEND);
+			sceGuColor(0xffffffff);
 
 			sceGumDrawArray(GU_TRIANGLE_STRIP, GU_TEXTURE_32BITF|GU_VERTEX_32BITF|GU_TRANSFORM_3D, 4, 0, sprite->vertices);
 
@@ -837,7 +598,7 @@ namespace Aurora
 			sceGumPopMatrix();
 		}
 		
-		void GuRenderManager::drawSprite(Sprite* sprite,float posx,float posy)
+		void GuRenderManager::DrawSprite(Sprite* sprite,float posx,float posy)
 		{
 			bindTexture(sprite->imageName);
 
@@ -848,7 +609,8 @@ namespace Aurora
 
 			sceGuEnable(GU_TEXTURE_2D);
 			sceGuEnable(GU_BLEND);
-
+			sceGuColor(0xffffffff);
+			
 			sceGumDrawArray(GU_TRIANGLE_STRIP, GU_TEXTURE_32BITF|GU_VERTEX_32BITF|GU_TRANSFORM_3D, 4, 0, sprite->vertices);
 
 			sceGuDisable(GU_BLEND);
@@ -856,25 +618,9 @@ namespace Aurora
 
 			sceGumPopMatrix();
 		}
-
-		void GuRenderManager::drawCube(unsigned int color,Math::Vector3 position,Math::Vector3 scale,Math::Vector3 rotation)
-		{
-			sceGumPushMatrix();
-			
-			ScePspFVector3 loc = {position.x,position.y,position.z};
-			sceGumTranslate(&loc);
-
-			ScePspFVector3 rot = {Aurora::Math::Math::degreesToRadians(rotation.x),Aurora::Math::Math::degreesToRadians(rotation.y),Aurora::Math::Math::degreesToRadians(rotation.z)};
-			sceGumRotateXYZ(&rot);			
-
-			sceGuColor(GU_RGBA(color&0xff, (color>>8)&0xff, (color>>16)&0xff, (color>>24)&0xff));
-
-			sceGumDrawArray(GU_TRIANGLES,GU_VERTEX_32BITF|GU_TRANSFORM_3D,12*3, 0,_cubeVertices);
-
-			sceGuColor(0xffffffff);
-			sceGumPopMatrix();
-		}
-
+		
+		
+		/*
 		void GuRenderManager::DrawCubeTextured(Image* texture,Math::Vector3 position,Math::Vector3 scale,Math::Vector3 rotation)
 		{
 			sceGumPushMatrix();
@@ -926,59 +672,6 @@ namespace Aurora
 
 			sceGumPopMatrix();
 		}
-
-		void GuRenderManager::DrawModelObj(ModelObj *model,Math::Vector3 position,Math::Vector3 scale,Math::Vector3 rotation)
-		{
-			sceGumPushMatrix();
-
-			ScePspFVector3 loc = {position.x,position.y,position.z};
-			ScePspFVector3 rot = {Aurora::Math::Math::degreesToRadians(rotation.x),Aurora::Math::Math::degreesToRadians(rotation.y),Aurora::Math::Math::degreesToRadians(rotation.z)};
-			ScePspFVector3 sca = {scale.x,scale.y,scale.z};
-
-			sceGumTranslate(&loc);
-			sceGumRotateXYZ(&rot);
-			sceGumScale(&sca);
-
-			sceGuColor(0xffffffff);
-			sceGuEnable(GU_TEXTURE_2D);
-
-			unsigned int count = model->mMeshes.size();
-
-			for(unsigned int i = 0;i < count;i++)
-			{
-				ObjMesh *mesh = model->mMeshes[i];
-
-				if(mesh->mMaterial != -1)
-				{
-					ObjMaterial *material = model->mMaterials[mesh->mMaterial];
-
-					bindTexture(material->colorMapFilename);
-
-					/*if(material->mipmapping)
-					{
-						TextureManager::Instance()->SetMipMapsTextures(material->texturID,material->mipmap1,material->mipmap2,material->mipmap3);
-
-					}else
-					{
-						TextureManager::Instance()->SetTexture(material->texturID,GU_NEAREST,GU_NEAREST);
-					}
-				}
-
-				if (mesh->mMaterial != -1 && model->mMaterials[mesh->mMaterial]->lightmapping)
-				{
-					//ObjMaterial *material = model->mMaterials[mesh->mMaterial];
-					//TextureManager::Instance()->SetTexture(material->lightMapID);
-				}
-
-				//if(mesh->triangles)
-					sceGumDrawArray(GU_TRIANGLES,GU_TEXTURE_32BITF|GU_VERTEX_32BITF|GU_TRANSFORM_3D,mesh->vertexCount,0,mesh->meshVertices);
-				//else
-				//	sceGumDrawArray(GU_TRIANGLE_STRIP,GU_TEXTURE_32BITF|GU_VERTEX_32BITF|GU_TRANSFORM_3D,mesh->indicesCount,0,mesh->meshVertices);
-			}
-
-			sceGuDisable(GU_TEXTURE_2D);
-
-			sceGumPopMatrix();
-		}*/
+		*/
 	}
 }

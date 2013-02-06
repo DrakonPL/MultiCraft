@@ -1,6 +1,8 @@
 #include <Aurora/Graphics/Sprite.h>
 #include <Aurora/Graphics/TextureManager.h>
 
+#include <malloc.h>
+
 namespace Aurora
 {
 
@@ -30,7 +32,11 @@ namespace Aurora
 			TextureManager::Instance()->loadImageFromFile(filename);
 
 			//generate wertices
+#ifndef AURORA_PSP
 			vertices = new TexturedVertex[4];
+#else
+			vertices = (TexturedVertex*)memalign(16,4 * sizeof(TexturedVertex));
+#endif
 
 			Image *img = TextureManager::Instance()->getImage(filename);
 
@@ -55,7 +61,11 @@ namespace Aurora
 			TextureManager::Instance()->loadImageFromFile(filename);
 
 			//generate wertices
+#ifndef AURORA_PSP
 			vertices = new TexturedVertex[4];
+#else
+			vertices = (TexturedVertex*)memalign(16,4 * sizeof(TexturedVertex));
+#endif
 
 			Image* img = TextureManager::Instance()->getImage(filename);
 

@@ -1,5 +1,5 @@
 #include "SimpleTest.h"
-#include <Aurora/Utils/Logger.h>
+#include "ScreenSizeTest.h"
 
 
 void SimpleTest::Init()
@@ -47,6 +47,14 @@ void SimpleTest::HandleEvents(GameManager* sManager)
 {
 	_systemManager->Update();
 
+	if (_systemManager->keyPressed(Key::Space))
+	{
+		ScreenSizeTest* screenSizeTest = new ScreenSizeTest();
+		screenSizeTest->Init();
+
+		sManager->ChangeState(screenSizeTest);
+	}
+
 }
 
 void SimpleTest::Update(GameManager* sManager)
@@ -65,8 +73,12 @@ void SimpleTest::Draw(GameManager* sManager)
 	//draw fps
 	char deltaTime[30];
 	sprintf(deltaTime,"dt: %f",dt);
-	font->DrawText(_renderManager->GetWidth()/2,13,deltaTime,Aurora::Graphics::ALIGN_CENTER,Aurora::Graphics::RenderManager::RGBA(0x00, 0x00, 0x00, 0xff));
+	font->DrawText(2,13,deltaTime,Aurora::Graphics::ALIGN_LEFT,Aurora::Graphics::RenderManager::RGBA(0x00, 0x00, 0x00, 0xff));
 
+	font->DrawText(_renderManager->GetWidth()/2,13,"Simple test",Aurora::Graphics::ALIGN_CENTER,Aurora::Graphics::RenderManager::RGBA(0x00, 0x00, 0x00, 0xff));
+	
+	font->DrawText(_renderManager->GetWidth()/2,_renderManager->GetHeight() - 2,"Press Space/Select to change test.",Aurora::Graphics::ALIGN_CENTER,Aurora::Graphics::RenderManager::RGBA(0x00, 0x00, 0x00, 0xff));
+	
 	_renderManager->EndFrame();
 }
 
