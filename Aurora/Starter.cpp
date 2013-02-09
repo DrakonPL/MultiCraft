@@ -3,7 +3,7 @@
 
 #include "Tests/SimpleTest.h"
 #include "Tests/ThreadTest.h"
-#include "Tests/ScreenSizeTest.h"
+#include "Tests/SpriteTest.h"
 
 
 class ExampleGameManager : public GameManager

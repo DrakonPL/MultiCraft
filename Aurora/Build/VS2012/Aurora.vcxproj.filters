@@ -64,6 +64,9 @@
     <Filter Include="Aurora\Threads\win">
       <UniqueIdentifier>{6311b3b5-f390-44cb-9045-801584fc6e9e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Aurora\Graphics\stb">
+      <UniqueIdentifier>{da655805-8885-40ee-b4ae-5acca7b7a77a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Aurora\Audio\AudioManager.cpp">
@@ -304,7 +307,7 @@
     <ClCompile Include="..\..\Aurora\Math\MathUtils.cpp">
       <Filter>Aurora\Math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Tests\ScreenSizeTest.cpp">
+    <ClCompile Include="..\..\Tests\SpriteTest.cpp">
       <Filter>Tests</Filter>
     </ClCompile>
   </ItemGroup>
@@ -337,12 +340,6 @@
       <Filter>Aurora\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Aurora\Graphics\SpriteAnimation.h">
-      <Filter>Aurora\Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\stb_image.h">
-      <Filter>Aurora\Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\stb_truetype.h">
       <Filter>Aurora\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Aurora\Graphics\TextureManager.h">
@@ -576,11 +573,20 @@
     <ClInclude Include="..\..\Aurora\Math\MathUtils.h">
       <Filter>Aurora\Math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Tests\ScreenSizeTest.h">
-      <Filter>Tests</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Tests\ThreadTest.h">
       <Filter>Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tests\SpriteTest.h">
+      <Filter>Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\stb\stb_image.h">
+      <Filter>Aurora\Graphics\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\stb\stb_image_write.h">
+      <Filter>Aurora\Graphics\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\stb\stb_truetype.h">
+      <Filter>Aurora\Graphics\stb</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -77,7 +77,7 @@ OBJS = ../../Aurora/Math/MathLib.o \
 ../../libs/libzip/zip.o \
 ../../libs/tinyxml/tinyxml2.o \
 ../../Tests/ThreadTest.o \
-../../Tests/ScreenSizeTest.o \
+../../Tests/SpriteTest.o \
 ../../Tests/SimpleTest.o \
 ../../Starter.o
 

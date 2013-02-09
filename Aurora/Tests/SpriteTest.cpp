@@ -1,7 +1,7 @@
-#include "ScreenSizeTest.h"
+#include "SpriteTest.h"
 #include "ThreadTest.h"
 
-void ScreenSizeTest::Init()
+void SpriteTest::Init()
 {
 	_renderManager = RenderManager::Instance();
 	_systemManager = SystemManager::Instance();
@@ -14,38 +14,38 @@ void ScreenSizeTest::Init()
 	dt = 0.0f;
 }
 
-void ScreenSizeTest::Enter()
+void SpriteTest::Enter()
 {
 	RenderManager::Instance()->SetOrtho();
 	_clock.Reset();
 }
 
-void ScreenSizeTest::CleanUp()
-{
-//delete font;
-}
-
-void ScreenSizeTest::Pause()
+void SpriteTest::CleanUp()
 {
 
 }
 
-void ScreenSizeTest::Resume()
+void SpriteTest::Pause()
 {
 
 }
 
-void ScreenSizeTest::GamePause()
+void SpriteTest::Resume()
 {
 
 }
 
-void ScreenSizeTest::GameResume()
+void SpriteTest::GamePause()
 {
 
 }
 
-void ScreenSizeTest::HandleEvents(GameManager* sManager)
+void SpriteTest::GameResume()
+{
+
+}
+
+void SpriteTest::HandleEvents(GameManager* sManager)
 {
 	_systemManager->Update();
 
@@ -58,13 +58,13 @@ void ScreenSizeTest::HandleEvents(GameManager* sManager)
 	}
 }
 
-void ScreenSizeTest::Update(GameManager* sManager)
+void SpriteTest::Update(GameManager* sManager)
 {
 	//delta time
 	dt = _clock.getTime();
 	_clock.Reset();
 }
-void ScreenSizeTest::Draw(GameManager* sManager)
+void SpriteTest::Draw(GameManager* sManager)
 {
 	RenderManager::Instance()->StartFrame();
 	RenderManager::Instance()->ClearScreen();

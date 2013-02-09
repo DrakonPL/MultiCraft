@@ -256,7 +256,7 @@ xcopy $(SolutionDir)\..\..\Assets  $(ProjectDir)\Assets /Y /E /I</Command>
     <ClCompile Include="..\..\libs\libzip\zip.c" />
     <ClCompile Include="..\..\libs\tinyxml\tinyxml2.cpp" />
     <ClCompile Include="..\..\Starter.cpp" />
-    <ClCompile Include="..\..\Tests\ScreenSizeTest.cpp" />
+    <ClCompile Include="..\..\Tests\SpriteTest.cpp" />
     <ClCompile Include="..\..\Tests\SimpleTest.cpp" />
     <ClCompile Include="..\..\Tests\ThreadTest.cpp" />
   </ItemGroup>
@@ -281,8 +281,9 @@ xcopy $(SolutionDir)\..\..\Assets  $(ProjectDir)\Assets /Y /E /I</Command>
     <ClInclude Include="..\..\Aurora\Graphics\Sprite.h" />
     <ClInclude Include="..\..\Aurora\Graphics\Sprite3D.h" />
     <ClInclude Include="..\..\Aurora\Graphics\SpriteAnimation.h" />
-    <ClInclude Include="..\..\Aurora\Graphics\stb_image.h" />
-    <ClInclude Include="..\..\Aurora\Graphics\stb_truetype.h" />
+    <ClInclude Include="..\..\Aurora\Graphics\stb\stb_image.h" />
+    <ClInclude Include="..\..\Aurora\Graphics\stb\stb_image_write.h" />
+    <ClInclude Include="..\..\Aurora\Graphics\stb\stb_truetype.h" />
     <ClInclude Include="..\..\Aurora\Graphics\TextureManager.h" />
     <ClInclude Include="..\..\Aurora\Graphics\TrueTypeFont.h" />
     <ClInclude Include="..\..\Aurora\Graphics\VertexBuffer.h" />
@@ -349,7 +350,7 @@ xcopy $(SolutionDir)\..\..\Assets  $(ProjectDir)\Assets /Y /E /I</Command>
     <ClInclude Include="..\..\libs\libzip\unzip.h" />
     <ClInclude Include="..\..\libs\libzip\zip.h" />
     <ClInclude Include="..\..\libs\tinyxml\tinyxml2.h" />
-    <ClInclude Include="..\..\Tests\ScreenSizeTest.h" />
+    <ClInclude Include="..\..\Tests\SpriteTest.h" />
     <ClInclude Include="..\..\Tests\SimpleTest.h" />
     <ClInclude Include="..\..\Tests\ThreadTest.h" />
   </ItemGroup>

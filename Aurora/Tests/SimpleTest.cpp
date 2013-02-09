@@ -1,5 +1,5 @@
 #include "SimpleTest.h"
-#include "ScreenSizeTest.h"
+#include "SpriteTest.h"
 
 
 void SimpleTest::Init()
@@ -49,10 +49,10 @@ void SimpleTest::HandleEvents(GameManager* sManager)
 
 	if (_systemManager->keyPressed(Key::Space))
 	{
-		ScreenSizeTest* screenSizeTest = new ScreenSizeTest();
-		screenSizeTest->Init();
+		SpriteTest* sriteTest = new SpriteTest();
+		sriteTest->Init();
 
-		sManager->ChangeState(screenSizeTest);
+		sManager->ChangeState(sriteTest);
 	}
 
 }

@@ -2,7 +2,7 @@
 #include <Aurora/System/FileManager.h>
 
 #define STB_IMAGE_WRITE_IMPLEMENTATION
-#include "stb_image.h"
+#include "stb/stb_image.h"
 
 namespace Aurora
 {

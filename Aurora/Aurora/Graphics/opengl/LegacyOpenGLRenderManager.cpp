@@ -1,6 +1,6 @@
 #include <Aurora/Graphics/opengl/LegacyOpenGLRenderManager.h>
 #include <Aurora/Graphics/TextureManager.h>
-#include "../stb_truetype.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

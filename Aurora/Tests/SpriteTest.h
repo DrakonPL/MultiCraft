@@ -13,7 +13,7 @@ using namespace Aurora::Utils;
 using namespace Aurora::System;
 using namespace Aurora::Math;
 
-class ScreenSizeTest : public GameState
+class SpriteTest : public GameState
 {
 private:
 
