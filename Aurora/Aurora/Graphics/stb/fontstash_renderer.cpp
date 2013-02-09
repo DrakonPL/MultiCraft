@@ -63,6 +63,11 @@ void fontstash_renderer::updateTexture(sth_texture* texture, sth_glyph* glyph, i
 {
 	if (glyph)
 	{
+		if (texture->image->_pixels != 0)
+		{
+			delete [] texture->image->_pixels;
+		}
+
 		texture->image->_pixels = convert_format2(texture->m_texels,1,4,textureWidth, textureHeight);
 
 		Aurora::Graphics::RenderManager::Instance()->UpdateTexture(texture->image);

@@ -75,7 +75,7 @@ namespace Aurora
 			sceGuDisable(GU_CLIP_PLANES);
 			
 			sceGuEnable(GU_CULL_FACE);
-            sceGuFrontFace(GU_CCW);
+            SetFrontFace(CCW);
 
 
 			sceGuBlendFunc(GU_ADD, GU_SRC_ALPHA, GU_ONE_MINUS_SRC_ALPHA, 0, 0);
