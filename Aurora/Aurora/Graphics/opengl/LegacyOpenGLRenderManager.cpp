@@ -48,7 +48,8 @@ namespace Aurora
 
 			glEnable( GL_CULL_FACE );
 			glCullFace( GL_BACK );
-			glFrontFace( GL_CCW );
+
+			SetFrontFace( CCW );
 
 			_currentTexture = -1;
 		}
@@ -298,7 +299,7 @@ namespace Aurora
 
 		}
 
-		void LegacyOpengGLRenderManager::_createTexture(Image* image)
+		void LegacyOpengGLRenderManager::CreateTexture(Image* image)
 		{
 			if (image != 0)
 			{
@@ -321,7 +322,7 @@ namespace Aurora
 			}
 		}
 
-		void LegacyOpengGLRenderManager::_createTexture(unsigned char* pixels,int width,int height,unsigned int &texId)
+		void LegacyOpengGLRenderManager::CreateTexture(unsigned char* pixels,int width,int height,unsigned int &texId)
 		{
 			if(pixels != 0)
 			{
@@ -339,7 +340,7 @@ namespace Aurora
 			}
 		}
 
-		void LegacyOpengGLRenderManager::_createEmptyTexture( Image* image, ImageLocation location )
+		void LegacyOpengGLRenderManager::CreateEmptyTexture( Image* image, ImageLocation location )
 		{
 			if (image != 0)
 			{
@@ -351,6 +352,15 @@ namespace Aurora
 				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
 				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 				glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
+			}
+		}
+
+		void LegacyOpengGLRenderManager::UpdateTexture(Image* image)
+		{
+			if (image != 0)
+			{
+				glBindTexture(GL_TEXTURE_2D, image->_id);
+				glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA,  image->_width,image->_height, 0, GL_RGBA, GL_UNSIGNED_BYTE, image->_pixels);
 			}
 		}
 
@@ -387,6 +397,19 @@ namespace Aurora
 			}else
 			{
 				glDisable(GL_BLEND);
+			}
+		}
+
+		void LegacyOpengGLRenderManager::SetFrontFace(FrontFace face)
+		{
+			if(face == CW)
+			{
+				glFrontFace( GL_CW );
+				_frontFace = CW;
+			}else
+			{
+				glFrontFace( GL_CCW );
+				_frontFace = CCW;
 			}
 		}
 

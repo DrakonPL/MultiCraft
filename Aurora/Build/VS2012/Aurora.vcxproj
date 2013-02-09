@@ -196,8 +196,12 @@ xcopy $(SolutionDir)\..\..\Assets  $(ProjectDir)\Assets /Y /E /I</Command>
     <ClCompile Include="..\..\Aurora\Graphics\Sprite.cpp" />
     <ClCompile Include="..\..\Aurora\Graphics\Sprite3D.cpp" />
     <ClCompile Include="..\..\Aurora\Graphics\SpriteAnimation.cpp" />
+    <ClCompile Include="..\..\Aurora\Graphics\stb\fontstash.cpp" />
+    <ClCompile Include="..\..\Aurora\Graphics\stb\fontstash_renderer.cpp" />
+    <ClCompile Include="..\..\Aurora\Graphics\stb\stb_truetype.cpp" />
     <ClCompile Include="..\..\Aurora\Graphics\TextureManager.cpp" />
     <ClCompile Include="..\..\Aurora\Graphics\TrueTypeFont.cpp" />
+    <ClCompile Include="..\..\Aurora\Graphics\UnicodeFont.cpp" />
     <ClCompile Include="..\..\Aurora\Math\BoundingBox.cpp" />
     <ClCompile Include="..\..\Aurora\Math\BoundingBox2D.cpp" />
     <ClCompile Include="..\..\Aurora\Math\BoundingSphere.cpp" />
@@ -259,6 +263,7 @@ xcopy $(SolutionDir)\..\..\Assets  $(ProjectDir)\Assets /Y /E /I</Command>
     <ClCompile Include="..\..\Tests\SpriteTest.cpp" />
     <ClCompile Include="..\..\Tests\SimpleTest.cpp" />
     <ClCompile Include="..\..\Tests\ThreadTest.cpp" />
+    <ClCompile Include="..\..\Tests\UnicodeTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Aurora\Audio\AudioManager.h" />
@@ -281,11 +286,14 @@ xcopy $(SolutionDir)\..\..\Assets  $(ProjectDir)\Assets /Y /E /I</Command>
     <ClInclude Include="..\..\Aurora\Graphics\Sprite.h" />
     <ClInclude Include="..\..\Aurora\Graphics\Sprite3D.h" />
     <ClInclude Include="..\..\Aurora\Graphics\SpriteAnimation.h" />
+    <ClInclude Include="..\..\Aurora\Graphics\stb\fontstash.h" />
+    <ClInclude Include="..\..\Aurora\Graphics\stb\fontstash_renderer.h" />
     <ClInclude Include="..\..\Aurora\Graphics\stb\stb_image.h" />
     <ClInclude Include="..\..\Aurora\Graphics\stb\stb_image_write.h" />
     <ClInclude Include="..\..\Aurora\Graphics\stb\stb_truetype.h" />
     <ClInclude Include="..\..\Aurora\Graphics\TextureManager.h" />
     <ClInclude Include="..\..\Aurora\Graphics\TrueTypeFont.h" />
+    <ClInclude Include="..\..\Aurora\Graphics\UnicodeFont.h" />
     <ClInclude Include="..\..\Aurora\Graphics\VertexBuffer.h" />
     <ClInclude Include="..\..\Aurora\Graphics\Vertex.h" />
     <ClInclude Include="..\..\Aurora\Math\BoundingBox.h" />
@@ -353,6 +361,7 @@ xcopy $(SolutionDir)\..\..\Assets  $(ProjectDir)\Assets /Y /E /I</Command>
     <ClInclude Include="..\..\Tests\SpriteTest.h" />
     <ClInclude Include="..\..\Tests\SimpleTest.h" />
     <ClInclude Include="..\..\Tests\ThreadTest.h" />
+    <ClInclude Include="..\..\Tests\UnicodeTest.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\Aurora\Network\Selector.inl" />

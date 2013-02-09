@@ -82,6 +82,9 @@
     <Filter Include="Aurora\Threads\win">
       <UniqueIdentifier>{73ad886f-cdfe-41bd-8985-a2b9cb9a7f86}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Aurora\Graphics\stb">
+      <UniqueIdentifier>{f3bab6cb-2eb6-49e7-9f39-e8683d82c549}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Aurora\Audio\AudioManager.cpp">
@@ -378,6 +381,18 @@
     <ClCompile Include="src\World\ChunkProvider.cpp">
       <Filter>Multicraft\World</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\stb\fontstash.cpp">
+      <Filter>Aurora\Graphics\stb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\stb\fontstash_renderer.cpp">
+      <Filter>Aurora\Graphics\stb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\stb\stb_truetype.cpp">
+      <Filter>Aurora\Graphics\stb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\UnicodeFont.cpp">
+      <Filter>Aurora\Graphics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Aurora\Audio\AudioManager.h">
@@ -408,12 +423,6 @@
       <Filter>Aurora\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Aurora\Graphics\SpriteAnimation.h">
-      <Filter>Aurora\Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\stb_image.h">
-      <Filter>Aurora\Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\stb_truetype.h">
       <Filter>Aurora\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Aurora\Graphics\TextureManager.h">
@@ -757,6 +766,24 @@
     </ClInclude>
     <ClInclude Include="src\World\ChunkProvider.h">
       <Filter>Multicraft\World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\stb\stb_image.h">
+      <Filter>Aurora\Graphics\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\stb\stb_image_write.h">
+      <Filter>Aurora\Graphics\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\stb\stb_truetype.h">
+      <Filter>Aurora\Graphics\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\stb\fontstash.h">
+      <Filter>Aurora\Graphics\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\stb\fontstash_renderer.h">
+      <Filter>Aurora\Graphics\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\UnicodeFont.h">
+      <Filter>Aurora\Graphics</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

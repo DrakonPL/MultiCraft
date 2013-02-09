@@ -5,8 +5,8 @@
 #include <Aurora/System/FileManager.h>
 #include <Aurora/Utils/Logger.h>
 
-#define STB_TRUETYPE_IMPLEMENTATION
 #include "stb/stb_truetype.h"
+
 
 namespace Aurora
 {
@@ -116,7 +116,7 @@ namespace Aurora
 			image->_height = 256;
 			image->_pixels = convert_format2(temp,1,4,256,256);
 
-			RenderManager::Instance()->_createTexture(image);
+			RenderManager::Instance()->CreateTexture(image);
 			TextureManager::Instance()->AddImage(image);
 
 			delete [] ttfBuffer;

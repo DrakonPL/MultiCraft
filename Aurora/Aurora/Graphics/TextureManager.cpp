@@ -30,7 +30,7 @@ namespace Aurora
 				if(image->loadImageFromFile(fileName))
 				{
 					//generate texture
-					RenderManager::Instance()->_createTexture(image);
+					RenderManager::Instance()->CreateTexture(image);
 
 					//add to collection
 					images.insert(std::pair<std::string,Image*>(fileName,image));
@@ -55,7 +55,7 @@ namespace Aurora
 				if(image->loadImageFromMemory(newName,data,size))
 				{
 					//generate texture
-					RenderManager::Instance()->_createTexture(image);
+					RenderManager::Instance()->CreateTexture(image);
 
 					//add to collection
 					images.insert(std::pair<std::string,Image*>(newName,image));
@@ -81,7 +81,7 @@ namespace Aurora
 				image->_width = width;
 				image->_height = height;
 
-				RenderManager::Instance()->_createEmptyTexture(image,location);
+				RenderManager::Instance()->CreateEmptyTexture(image,location);
 
 				//add to collection
 				images.insert(std::pair<std::string,Image*>(name,image));
@@ -121,7 +121,7 @@ namespace Aurora
 			for (std::map<std::string,Image*>::iterator it = images.begin(); it != images.end(); ++it)
 			{
 				//ugly way
-				RenderManager::Instance()->_createTexture(it->second);
+				RenderManager::Instance()->CreateTexture(it->second);
 			}
 			//std::cout << it->first << " => " << it->second << '\n';
 		}

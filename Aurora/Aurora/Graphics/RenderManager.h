@@ -34,6 +34,12 @@ namespace Aurora
 			TriangleFan
 		};
 
+		enum FrontFace
+		{
+			CW,
+			CCW
+		};
+
 		class TextureManager;
 		class TrueTypeFont;
 
@@ -61,16 +67,10 @@ namespace Aurora
 			int _currentTexture;
 			Camera *_currentCam;
 
+			FrontFace _frontFace;
+
 			static RenderManager *_renderManager;
 		
-		protected:
-
-			virtual void _createTexture(Image* image) = 0;
-			virtual void _createTexture(unsigned char* pixels,int width,int height,unsigned int &texId) = 0;
-			virtual void _createEmptyTexture( Image* image, ImageLocation location ) = 0;
-
-			static void _getGLVersion(int* major, int* minor);
-
 		public:
 
 			static RenderManager* Instance();
@@ -95,6 +95,7 @@ namespace Aurora
 			inline int GetHeight() { return _height; }
 			inline bool GetVsync() { return _vSync; }
 			inline bool GetFulscreen() { return _fullScreen;}
+			inline FrontFace GetFrontFace() {return _frontFace;}
 
 			friend class TextureManager;
 			friend class TrueTypeFont;
@@ -122,7 +123,13 @@ namespace Aurora
 			virtual void EndFrame() = 0;
 
 			virtual void bindTexture(Image* image) = 0;
-			virtual void bindTexture(std::string filename) = 0;			
+			virtual void bindTexture(std::string filename) = 0;
+
+			//textures
+			virtual void CreateTexture(Image* image) = 0;
+			virtual void CreateTexture(unsigned char* pixels,int width,int height,unsigned int &texId) = 0;
+			virtual void CreateEmptyTexture( Image* image, ImageLocation location ) = 0;
+			virtual void UpdateTexture(Image* image) = 0;
 
 			//render to texture
 			virtual void CreateRenderTexture(RenderTexture* renderTexture) = 0;
@@ -147,6 +154,7 @@ namespace Aurora
 
 			virtual void SetColor(unsigned int col) = 0;
 			virtual void SetBlending(bool state) = 0;
+			virtual void SetFrontFace(FrontFace face) = 0;
 
 			virtual void* CreateVertexObject(VertexType vertexType,int size) = 0;
 			virtual void DrawVertexObject(void* vertexObject,int vertexCound,bool textured,VertexType vertexType,VertexPrimitive vertecPrimitive) = 0;

@@ -1,5 +1,5 @@
 #include "SpriteTest.h"
-#include "ThreadTest.h"
+#include "UnicodeTest.h"
 
 void SpriteTest::Init()
 {
@@ -51,10 +51,10 @@ void SpriteTest::HandleEvents(GameManager* sManager)
 
 	if (_systemManager->keyPressed(Key::Space))
 	{
-		ThreadsTest* threadsTest = new ThreadsTest();
-		threadsTest->Init();
+		UnicodeTest* unicodeTest = new UnicodeTest();
+		unicodeTest->Init();
 
-		sManager->ChangeState(threadsTest);
+		sManager->ChangeState(unicodeTest);
 	}
 }
 

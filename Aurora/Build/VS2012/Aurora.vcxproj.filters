@@ -310,6 +310,21 @@
     <ClCompile Include="..\..\Tests\SpriteTest.cpp">
       <Filter>Tests</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\UnicodeFont.cpp">
+      <Filter>Aurora\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\stb\fontstash.cpp">
+      <Filter>Aurora\Graphics\stb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\stb\stb_truetype.cpp">
+      <Filter>Aurora\Graphics\stb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\stb\fontstash_renderer.cpp">
+      <Filter>Aurora\Graphics\stb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tests\UnicodeTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Aurora\Audio\AudioManager.h">
@@ -587,6 +602,18 @@
     </ClInclude>
     <ClInclude Include="..\..\Aurora\Graphics\stb\stb_truetype.h">
       <Filter>Aurora\Graphics\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\UnicodeFont.h">
+      <Filter>Aurora\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\stb\fontstash.h">
+      <Filter>Aurora\Graphics\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\stb\fontstash_renderer.h">
+      <Filter>Aurora\Graphics\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tests\UnicodeTest.h">
+      <Filter>Tests</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
