@@ -22,12 +22,16 @@ OBJS = ../../Aurora/Math/MathLib.o \
 ../../Aurora/Graphics/models/ModelObj2.o \
 ../../Aurora/Graphics/models/ModelMesh.o \
 ../../Aurora/Graphics/models/MeshMaterial.o \
+../../Aurora/Graphics/stb/fontstash.o \
+../../Aurora/Graphics/stb/fontstash_renderer.o \
+../../Aurora/Graphics/stb/stb_truetype.o \
 ../../Aurora/Graphics/TextureManager.o \
 ../../Aurora/Graphics/Camera.o \
 ../../Aurora/Graphics/Image.o \
 ../../Aurora/Graphics/Sprite.o \
 ../../Aurora/Graphics/Sprite3D.o \
 ../../Aurora/Graphics/TrueTypeFont.o \
+../../Aurora/Graphics/UnicodeFont.o \
 ../../Aurora/Graphics/RenderTexture.o \
 ../../Aurora/Audio/AudioManager.o \
 ../../Aurora/Audio/psp/Sound.o \
@@ -79,6 +83,7 @@ OBJS = ../../Aurora/Math/MathLib.o \
 ../../Tests/ThreadTest.o \
 ../../Tests/SpriteTest.o \
 ../../Tests/SimpleTest.o \
+../../Tests/UnicodeTest.o \
 ../../Starter.o
 
 INCDIR = $(PSPPATH)/include

@@ -41,12 +41,6 @@ namespace Aurora
 			ScePspFMatrix4 view;
 			ScePspFMatrix4 clip;
 
-		protected:
-
-			void _createTexture(Image* image);
-			void _createTexture(unsigned char* pixels,int width,int height,unsigned int &texId);
-			void _createEmptyTexture( Image* image, ImageLocation location );
-
 		public:
 
 			GuRenderManager();
@@ -64,6 +58,12 @@ namespace Aurora
 
 			void bindTexture(Image* image);
 			void bindTexture(std::string filename);
+			
+			//textures
+			void CreateTexture(Image* image);
+			void CreateTexture(unsigned char* pixels,int width,int height,unsigned int &texId);
+			void CreateEmptyTexture( Image* image, ImageLocation location );
+			void UpdateTexture(Image* image);
 			
 			//render to texture
 			void CreateRenderTexture(RenderTexture* renderTexture);
@@ -87,6 +87,7 @@ namespace Aurora
 
 			void SetColor(unsigned int col);
 			void SetBlending(bool state);
+			void SetFrontFace(FrontFace face);
 
 			void* CreateVertexObject(VertexType vertexType,int size);
 			void DrawVertexObject(void* vertexObject,int vertexCound,bool textured,VertexType vertexType,VertexPrimitive vertecPrimitive);

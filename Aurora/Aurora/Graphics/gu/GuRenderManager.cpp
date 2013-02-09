@@ -82,7 +82,7 @@ namespace Aurora
 
 			unsigned int test = 0;
 			unsigned char* aa;
-			_createTexture(aa,0,0,test);
+			CreateTexture(aa,0,0,test);
 
 			sceGuFinish();
 			sceGuSync(0,0);
@@ -342,7 +342,7 @@ namespace Aurora
 			pPlane->normalize();
 		}
 
-		void GuRenderManager::_createTexture(Image* image)
+		void GuRenderManager::CreateTexture(Image* image)
 		{
 			if (image != 0)
 			{
@@ -351,19 +351,24 @@ namespace Aurora
 			}
 		}
 
-		void GuRenderManager::_createTexture(unsigned char* pixels,int width,int height,unsigned int &texId)
+		void GuRenderManager::CreateTexture(unsigned char* pixels,int width,int height,unsigned int &texId)
 		{
 			texId = _imageIdCounter;
 			_imageIdCounter++;
 		}
 
-		void GuRenderManager::_createEmptyTexture( Image* image, ImageLocation location )
+		void GuRenderManager::CreateEmptyTexture( Image* image, ImageLocation location )
 		{
 			image->_id = _imageIdCounter;
 			_imageIdCounter++;
 
 			int size = image->_width * image->_height * 4;
 			image->_pixels = (unsigned char*)valloc(size);
+		}
+		
+		void GuRenderManager::UpdateTexture(Image* image)
+		{
+		
 		}
 
 		void GuRenderManager::bindTexture(Image* image)
@@ -441,6 +446,19 @@ namespace Aurora
 		void GuRenderManager::SetColor(unsigned int col)
 		{
 			sceGuColor(col);
+		}
+		
+		void GuRenderManager::SetFrontFace(FrontFace face)
+		{
+			if(face == CW)
+			{
+				sceGuFrontFace(GU_CW);
+				_frontFace = CW;
+			}else
+			{
+				sceGuFrontFace(GU_CCW);
+				_frontFace = CCW;
+			}
 		}
 		
 		void GuRenderManager::SetBlending(bool state)
