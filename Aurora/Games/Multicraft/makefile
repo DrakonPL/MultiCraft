@@ -28,6 +28,7 @@ OBJS = ../../Aurora/Math/MathLib.o \
 ../../Aurora/Graphics/TextureManager.o \
 ../../Aurora/Graphics/Camera.o \
 ../../Aurora/Graphics/Image.o \
+../../Aurora/Graphics/SkyBox.o \
 ../../Aurora/Graphics/Sprite.o \
 ../../Aurora/Graphics/Sprite3D.o \
 ../../Aurora/Graphics/TrueTypeFont.o \

@@ -72,7 +72,7 @@ namespace Aurora
 			sceGuEnable(GU_DEPTH_TEST);			
 
 			sceGuDisable(GU_TEXTURE_2D);
-			sceGuDisable(GU_CLIP_PLANES);
+			sceGuEnable(GU_CLIP_PLANES);
 			
 			sceGuEnable(GU_CULL_FACE);
             SetFrontFace(CCW);
@@ -471,6 +471,28 @@ namespace Aurora
 				sceGuDisable(GU_BLEND);
 			}
 		}
+		
+		void GuRenderManager::SetDepthTest(bool state)
+		{
+			if(state)
+			{
+				sceGuEnable(GU_DEPTH_TEST);	
+			}else
+			{
+				sceGuDisable(GU_DEPTH_TEST);	
+			}
+		}
+		
+		void GuRenderManager::SetDepthMask(bool state)
+		{
+			if(state)
+			{
+				sceGuDepthMask(GU_FALSE);
+			}else
+			{
+				sceGuDepthMask(GU_TRUE);
+			}
+		}
 
 		void* GuRenderManager::CreateVertexObject(VertexType vertexType,int size)
 		{
@@ -507,14 +529,38 @@ namespace Aurora
 				case Simple :
 				{
 					SimpleVertex* vertices = (SimpleVertex*)vertexObject;
-					sceGumDrawArray(GU_TRIANGLES, GU_VERTEX_32BITF|GU_TRANSFORM_3D, vertexCound, 0, vertices);
+					
+					switch(vertecPrimitive)
+					{
+					case Triangle:
+						sceGumDrawArray(GU_TRIANGLES, GU_VERTEX_32BITF|GU_TRANSFORM_3D, vertexCound, 0, vertices);
+						break;
+					case TriangleFan:
+						sceGumDrawArray(GU_TRIANGLE_FAN, GU_VERTEX_32BITF|GU_TRANSFORM_3D, vertexCound, 0, vertices);
+						break;
+					case TriangleStrip:
+						sceGumDrawArray(GU_TRIANGLE_STRIP, GU_VERTEX_32BITF|GU_TRANSFORM_3D, vertexCound, 0, vertices);
+						break;
+					}
 				}
 				break;
 
 				case Textured :
 				{
 					TexturedVertex* vertices = (TexturedVertex*)vertexObject;
-					sceGumDrawArray(GU_TRIANGLES, GU_TEXTURE_32BITF|GU_VERTEX_32BITF|GU_TRANSFORM_3D, vertexCound, 0, vertices);
+					
+					switch(vertecPrimitive)
+					{
+					case Triangle:
+						sceGumDrawArray(GU_TRIANGLES, GU_TEXTURE_32BITF|GU_VERTEX_32BITF|GU_TRANSFORM_3D, vertexCound, 0, vertices);
+						break;
+					case TriangleFan:
+						sceGumDrawArray(GU_TRIANGLE_FAN, GU_TEXTURE_32BITF|GU_VERTEX_32BITF|GU_TRANSFORM_3D, vertexCound, 0, vertices);
+						break;
+					case TriangleStrip:
+						sceGumDrawArray(GU_TRIANGLE_STRIP, GU_TEXTURE_32BITF|GU_VERTEX_32BITF|GU_TRANSFORM_3D, vertexCound, 0, vertices);
+						break;
+					}					
 				}
 				break;
 

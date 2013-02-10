@@ -65,6 +65,8 @@ namespace Aurora
 			void SetColor(unsigned int col);
 			void SetBlending(bool state);
 			void SetFrontFace(FrontFace face);
+			void SetDepthTest(bool state);
+			void SetDepthMask(bool state);
 
 			void* CreateVertexObject(VertexType vertexType,int size);
 			void DrawVertexObject(void* vertexObject,int vertexCound,bool textured,VertexType vertexType,VertexPrimitive vertecPrimitive);

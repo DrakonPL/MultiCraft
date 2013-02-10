@@ -4,11 +4,7 @@
 #include <Aurora/Graphics/Camera.h>
 #include <Aurora/Graphics/Image.h>
 #include <Aurora/Graphics/Sprite.h>
-#include <Aurora/Graphics/SpriteAnimation.h>
-#include <Aurora/Graphics/Sprite3D.h>
 #include <Aurora/Graphics/RenderTexture.h>
-#include <Aurora/Graphics/TrueTypeFont.h>
-//#include <Aurora/Graphics/ModelObj.h>
 
 #include <Aurora/Math/Vector3.h>
 #include <Aurora/Math/Vector2.h>
@@ -152,9 +148,12 @@ namespace Aurora
 			virtual void RotateMatrix(Vector3 rotation) = 0;
 			virtual void ScaleMatrix(Vector3 scale) = 0;
 
+			//mist stuff
 			virtual void SetColor(unsigned int col) = 0;
 			virtual void SetBlending(bool state) = 0;
 			virtual void SetFrontFace(FrontFace face) = 0;
+			virtual void SetDepthTest(bool state) = 0;
+			virtual void SetDepthMask(bool state) = 0;
 
 			virtual void* CreateVertexObject(VertexType vertexType,int size) = 0;
 			virtual void DrawVertexObject(void* vertexObject,int vertexCound,bool textured,VertexType vertexType,VertexPrimitive vertecPrimitive) = 0;

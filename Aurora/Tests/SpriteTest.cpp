@@ -77,7 +77,6 @@ void SpriteTest::Draw(GameManager* sManager)
 	RenderManager::Instance()->DrawSprite(itemSprite,_renderManager->GetWidth()/2 + _renderManager->GetWidth()/4,_renderManager->GetHeight()/2);
 
 	font->DrawText(_renderManager->GetWidth()/2,13,"Sprite test",Aurora::Graphics::ALIGN_CENTER,Aurora::Graphics::RenderManager::RGBA(0x00, 0x00, 0x00, 0xff));
-	
 	font->DrawText(_renderManager->GetWidth()/2,_renderManager->GetHeight() - 2,"Press Space/Select to change test.",Aurora::Graphics::ALIGN_CENTER,Aurora::Graphics::RenderManager::RGBA(0x00, 0x00, 0x00, 0xff));
 
 

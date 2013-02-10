@@ -325,6 +325,12 @@
     <ClCompile Include="..\..\Tests\UnicodeTest.cpp">
       <Filter>Tests</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Aurora\Graphics\SkyBox.cpp">
+      <Filter>Aurora\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Tests\SkyBoxTest.cpp">
+      <Filter>Tests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Aurora\Audio\AudioManager.h">
@@ -613,6 +619,12 @@
       <Filter>Aurora\Graphics\stb</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Tests\UnicodeTest.h">
+      <Filter>Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Aurora\Graphics\SkyBox.h">
+      <Filter>Aurora\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Tests\SkyBoxTest.h">
       <Filter>Tests</Filter>
     </ClInclude>
   </ItemGroup>

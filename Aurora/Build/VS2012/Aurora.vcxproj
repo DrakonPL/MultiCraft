@@ -192,6 +192,7 @@ xcopy $(SolutionDir)\..\..\Assets  $(ProjectDir)\Assets /Y /E /I</Command>
     <ClCompile Include="..\..\Aurora\Graphics\opengl\VertexBuffer.cpp" />
     <ClCompile Include="..\..\Aurora\Graphics\RenderManager.cpp" />
     <ClCompile Include="..\..\Aurora\Graphics\RenderTexture.cpp" />
+    <ClCompile Include="..\..\Aurora\Graphics\SkyBox.cpp" />
     <ClCompile Include="..\..\Aurora\Graphics\SplashScreen.cpp" />
     <ClCompile Include="..\..\Aurora\Graphics\Sprite.cpp" />
     <ClCompile Include="..\..\Aurora\Graphics\Sprite3D.cpp" />
@@ -260,6 +261,7 @@ xcopy $(SolutionDir)\..\..\Assets  $(ProjectDir)\Assets /Y /E /I</Command>
     <ClCompile Include="..\..\libs\libzip\zip.c" />
     <ClCompile Include="..\..\libs\tinyxml\tinyxml2.cpp" />
     <ClCompile Include="..\..\Starter.cpp" />
+    <ClCompile Include="..\..\Tests\SkyBoxTest.cpp" />
     <ClCompile Include="..\..\Tests\SpriteTest.cpp" />
     <ClCompile Include="..\..\Tests\SimpleTest.cpp" />
     <ClCompile Include="..\..\Tests\ThreadTest.cpp" />
@@ -282,6 +284,7 @@ xcopy $(SolutionDir)\..\..\Assets  $(ProjectDir)\Assets /Y /E /I</Command>
     <ClInclude Include="..\..\Aurora\Graphics\opengl\VertexBuffer.h" />
     <ClInclude Include="..\..\Aurora\Graphics\RenderManager.h" />
     <ClInclude Include="..\..\Aurora\Graphics\RenderTexture.h" />
+    <ClInclude Include="..\..\Aurora\Graphics\SkyBox.h" />
     <ClInclude Include="..\..\Aurora\Graphics\SplashScreen.h" />
     <ClInclude Include="..\..\Aurora\Graphics\Sprite.h" />
     <ClInclude Include="..\..\Aurora\Graphics\Sprite3D.h" />
@@ -358,6 +361,7 @@ xcopy $(SolutionDir)\..\..\Assets  $(ProjectDir)\Assets /Y /E /I</Command>
     <ClInclude Include="..\..\libs\libzip\unzip.h" />
     <ClInclude Include="..\..\libs\libzip\zip.h" />
     <ClInclude Include="..\..\libs\tinyxml\tinyxml2.h" />
+    <ClInclude Include="..\..\Tests\SkyBoxTest.h" />
     <ClInclude Include="..\..\Tests\SpriteTest.h" />
     <ClInclude Include="..\..\Tests\SimpleTest.h" />
     <ClInclude Include="..\..\Tests\ThreadTest.h" />

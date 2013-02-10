@@ -4,6 +4,7 @@
 #include "Tests/SimpleTest.h"
 #include "Tests/ThreadTest.h"
 #include "Tests/SpriteTest.h"
+#include "Tests/SkyBoxTest.h"
 #include "Tests/UnicodeTest.h"
 
 

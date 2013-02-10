@@ -4,6 +4,7 @@
 #include <Aurora/Graphics/RenderManager.h>
 #include <Aurora/Graphics/TrueTypeFont.h>
 #include <Aurora/Graphics/Camera.h>
+#include <Aurora/Graphics/SkyBox.h>
 #include <Aurora/Graphics/models/ModelObj2.h>
 #include <Aurora/Utils/GameManager.h>
 #include <Aurora/Utils/GameState.h>
@@ -29,6 +30,7 @@ private:
 
 	//framework
 	TrueTypeFont* font;
+	SkyBox* _skyBox;
 
 	FileManager* _fileManager;
 	RenderManager* _renderManager;

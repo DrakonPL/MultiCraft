@@ -190,9 +190,11 @@ xcopy $(SolutionDir)\..\..\Assets  $(ProjectDir)\Assets /Y /E /I</Command>
     <ClCompile Include="..\..\Aurora\Graphics\models\ModelMesh.cpp" />
     <ClCompile Include="..\..\Aurora\Graphics\models\ModelObj2.cpp" />
     <ClCompile Include="..\..\Aurora\Graphics\opengl\LegacyOpenGLRenderManager.cpp" />
+    <ClCompile Include="..\..\Aurora\Graphics\opengl\shaders\shader.cpp" />
     <ClCompile Include="..\..\Aurora\Graphics\opengl\VertexBuffer.cpp" />
     <ClCompile Include="..\..\Aurora\Graphics\RenderManager.cpp" />
     <ClCompile Include="..\..\Aurora\Graphics\RenderTexture.cpp" />
+    <ClCompile Include="..\..\Aurora\Graphics\SkyBox.cpp" />
     <ClCompile Include="..\..\Aurora\Graphics\SplashScreen.cpp" />
     <ClCompile Include="..\..\Aurora\Graphics\Sprite.cpp" />
     <ClCompile Include="..\..\Aurora\Graphics\Sprite3D.cpp" />
@@ -296,9 +298,11 @@ xcopy $(SolutionDir)\..\..\Assets  $(ProjectDir)\Assets /Y /E /I</Command>
     <ClInclude Include="..\..\Aurora\Graphics\models\ModelMesh.h" />
     <ClInclude Include="..\..\Aurora\Graphics\models\ModelObj2.h" />
     <ClInclude Include="..\..\Aurora\Graphics\opengl\LegacyOpenGLRenderManager.h" />
+    <ClInclude Include="..\..\Aurora\Graphics\opengl\shaders\shader.h" />
     <ClInclude Include="..\..\Aurora\Graphics\opengl\VertexBuffer.h" />
     <ClInclude Include="..\..\Aurora\Graphics\RenderManager.h" />
     <ClInclude Include="..\..\Aurora\Graphics\RenderTexture.h" />
+    <ClInclude Include="..\..\Aurora\Graphics\SkyBox.h" />
     <ClInclude Include="..\..\Aurora\Graphics\SplashScreen.h" />
     <ClInclude Include="..\..\Aurora\Graphics\Sprite.h" />
     <ClInclude Include="..\..\Aurora\Graphics\Sprite3D.h" />
@@ -415,6 +419,8 @@ xcopy $(SolutionDir)\..\..\Assets  $(ProjectDir)\Assets /Y /E /I</Command>
     <ClInclude Include="src\World\WorldConfig.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\Aurora\Graphics\opengl\shaders\basic.frag" />
+    <None Include="..\..\Aurora\Graphics\opengl\shaders\basic.vert" />
     <None Include="..\..\Aurora\Network\Selector.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

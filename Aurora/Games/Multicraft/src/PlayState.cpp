@@ -9,6 +9,14 @@ void PlayState::Init()
 
 	font = new TrueTypeFont("Assets/Minecraft/font.ttf",16);
 
+	_skyBox = new SkyBox();
+	_skyBox->LoadImage("Assets/SkyBox/0Panorama_back.png",Back);
+	_skyBox->LoadImage("Assets/SkyBox/0Panorama_front.png",Front);
+	_skyBox->LoadImage("Assets/SkyBox/0Panorama_left.png",Left);
+	_skyBox->LoadImage("Assets/SkyBox/0Panorama_right.png",Right);
+	_skyBox->LoadImage("Assets/SkyBox/0Panorama_up.png",Up);
+	_skyBox->LoadImage("Assets/SkyBox/0Panorama_down.png",Down);
+
 	cubeModel = new ModelObj2();
 	cubeModel->Load("Assets/Models/Obj/textureCube.objb");
 	cubeModel->UseFrustumCheck(false);
@@ -196,12 +204,15 @@ void PlayState::Draw(GameManager* sManager)
 
 	_renderManager->SetPerspective();
 	_renderManager->UpdateCurrentCamera();
-
+	
 	if (_playerCam->NeedUpdate())
 	{
 		_renderManager->ExtractFrustumPlanes(_playerFrustum);
 		blockPicked = _world->CubePick(_playerCam->m_vPosition,_playerCam->GetViewDirection(),5.0f,0.25f,pickPos);
-	}	
+	}
+
+	_skyBox->SetPositionSize(_playerCam->m_vPosition,Vector3(1,1,1));
+	_skyBox->Draw();
 
 	_world->FetchVisibleChunks();
 	_world->DrawWorld(false);
