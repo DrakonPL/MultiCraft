@@ -90,725 +90,725 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Aurora\Audio\AudioManager.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Audio\AudioManager.cpp">
       <Filter>Aurora\Audio</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Audio\sfml\sfmlAudioManager.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Audio\sfml\sfmlAudioManager.cpp">
       <Filter>Aurora\Audio\sfml</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Audio\sfml\Sound.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Audio\sfml\Sound.cpp">
       <Filter>Aurora\Audio\sfml</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Graphics\Camera.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Graphics\Camera.cpp">
       <Filter>Aurora\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Graphics\Image.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Graphics\Image.cpp">
       <Filter>Aurora\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Graphics\RenderManager.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Graphics\RenderManager.cpp">
       <Filter>Aurora\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Graphics\SplashScreen.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Graphics\SplashScreen.cpp">
       <Filter>Aurora\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Graphics\Sprite.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Graphics\Sprite.cpp">
       <Filter>Aurora\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Graphics\Sprite3D.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Graphics\Sprite3D.cpp">
       <Filter>Aurora\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Graphics\SpriteAnimation.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Graphics\SpriteAnimation.cpp">
       <Filter>Aurora\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Graphics\TextureManager.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Graphics\TextureManager.cpp">
       <Filter>Aurora\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Graphics\TrueTypeFont.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Graphics\TrueTypeFont.cpp">
       <Filter>Aurora\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Math\BoundingBox.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Math\BoundingBox.cpp">
       <Filter>Aurora\Math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Math\BoundingBox2D.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Math\BoundingBox2D.cpp">
       <Filter>Aurora\Math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Math\BoundingSphere.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Math\BoundingSphere.cpp">
       <Filter>Aurora\Math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Math\Frustum.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Math\Frustum.cpp">
       <Filter>Aurora\Math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Math\MathLib.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Math\MathLib.cpp">
       <Filter>Aurora\Math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Math\Matrix3.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Math\Matrix3.cpp">
       <Filter>Aurora\Math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Math\Matrix4.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Math\Matrix4.cpp">
       <Filter>Aurora\Math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Math\Plane.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Math\Plane.cpp">
       <Filter>Aurora\Math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Math\Polygon.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Math\Polygon.cpp">
       <Filter>Aurora\Math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Math\Quaternion.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Math\Quaternion.cpp">
       <Filter>Aurora\Math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Math\Ray.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Math\Ray.cpp">
       <Filter>Aurora\Math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Math\Vector2.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Math\Vector2.cpp">
       <Filter>Aurora\Math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Math\Vector3.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Math\Vector3.cpp">
       <Filter>Aurora\Math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Math\Vector4.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Math\Vector4.cpp">
       <Filter>Aurora\Math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Network\pc\PcNetworkManager.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Network\pc\PcNetworkManager.cpp">
       <Filter>Aurora\Network\pc</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Network\Win32\SocketHelper.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Network\Win32\SocketHelper.cpp">
       <Filter>Aurora\Network\Win32</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Network\Http.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Network\Http.cpp">
       <Filter>Aurora\Network</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Network\IPAddress.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Network\IPAddress.cpp">
       <Filter>Aurora\Network</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Network\NetworkInputControllerClient.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Network\NetworkInputControllerClient.cpp">
       <Filter>Aurora\Network</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Network\NetworkInputControllerServer.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Network\NetworkInputControllerServer.cpp">
       <Filter>Aurora\Network</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Network\NetworkManager.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Network\NetworkManager.cpp">
       <Filter>Aurora\Network</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Network\Packet.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Network\Packet.cpp">
       <Filter>Aurora\Network</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Network\SelectorBase.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Network\SelectorBase.cpp">
       <Filter>Aurora\Network</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Network\SocketTCP.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Network\SocketTCP.cpp">
       <Filter>Aurora\Network</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Network\SocketUDP.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Network\SocketUDP.cpp">
       <Filter>Aurora\Network</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\System\pc\Clock.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\System\pc\Clock.cpp">
       <Filter>Aurora\System\pc</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\System\pc\PcSystemManager.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\System\pc\PcSystemManager.cpp">
       <Filter>Aurora\System\pc</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\System\DiskFile.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\System\DiskFile.cpp">
       <Filter>Aurora\System</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\System\File.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\System\File.cpp">
       <Filter>Aurora\System</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\System\FileManager.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\System\FileManager.cpp">
       <Filter>Aurora\System</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\System\SystemManager.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\System\SystemManager.cpp">
       <Filter>Aurora\System</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\System\VFSFile.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\System\VFSFile.cpp">
       <Filter>Aurora\System</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\System\VFSPack.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\System\VFSPack.cpp">
       <Filter>Aurora\System</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\System\ZipFile.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\System\ZipFile.cpp">
       <Filter>Aurora\System</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\System\ZipPack.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\System\ZipPack.cpp">
       <Filter>Aurora\System</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Utils\pc\WinGameLoader.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Utils\pc\WinGameLoader.cpp">
       <Filter>Aurora\Utils\pc</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Utils\AES.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Utils\AES.cpp">
       <Filter>Aurora\Utils</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Utils\Compression.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Utils\Compression.cpp">
       <Filter>Aurora\Utils</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Utils\Crypto.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Utils\Crypto.cpp">
       <Filter>Aurora\Utils</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Utils\GameLoader.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Utils\GameLoader.cpp">
       <Filter>Aurora\Utils</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Utils\GameManager.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Utils\GameManager.cpp">
       <Filter>Aurora\Utils</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Utils\md5.c">
+    <ClCompile Include="..\..\..\..\Aurora\Utils\md5.c">
       <Filter>Aurora\Utils</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\libs\libzip\ioapi.c">
+    <ClCompile Include="..\..\..\..\libs\libzip\ioapi.c">
       <Filter>Libs\libzip</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\libs\libzip\unzip.c">
+    <ClCompile Include="..\..\..\..\libs\libzip\unzip.c">
       <Filter>Libs\libzip</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\libs\libzip\zip.c">
+    <ClCompile Include="..\..\..\..\libs\libzip\zip.c">
       <Filter>Libs\libzip</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\libs\libzip\iowin32.c">
+    <ClCompile Include="..\..\..\..\libs\libzip\iowin32.c">
       <Filter>Libs\libzip</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Utils\Logger.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Utils\Logger.cpp">
       <Filter>Aurora\Utils</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Graphics\RenderTexture.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Graphics\RenderTexture.cpp">
       <Filter>Aurora\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Graphics\models\ModelIqm.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Graphics\models\ModelIqm.cpp">
       <Filter>Aurora\Graphics\models</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Graphics\models\ModelMd5.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Graphics\models\ModelMd5.cpp">
       <Filter>Aurora\Graphics\models</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Graphics\models\ModelMesh.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Graphics\models\ModelMesh.cpp">
       <Filter>Aurora\Graphics\models</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Graphics\models\MeshMaterial.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Graphics\models\MeshMaterial.cpp">
       <Filter>Aurora\Graphics\models</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Graphics\opengl\VertexBuffer.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Graphics\opengl\VertexBuffer.cpp">
       <Filter>Aurora\Graphics\opengl</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Graphics\models\ModelObj2.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Graphics\models\ModelObj2.cpp">
       <Filter>Aurora\Graphics\models</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Graphics\opengl\LegacyOpenGLRenderManager.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Graphics\opengl\LegacyOpenGLRenderManager.cpp">
       <Filter>Aurora\Graphics\opengl</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Graphics\opengl\shaders\shader.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Graphics\opengl\shaders\shader.cpp">
       <Filter>Aurora\Graphics\opengl\shaders</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\System\Timer.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\System\Timer.cpp">
       <Filter>Aurora\System</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\libs\tinyxml\tinyxml2.cpp">
+    <ClCompile Include="..\..\..\..\libs\tinyxml\tinyxml2.cpp">
       <Filter>Libs\tinyxml</Filter>
     </ClCompile>
-    <ClCompile Include="src\PlayState.cpp">
+    <ClCompile Include="..\..\src\PlayState.cpp">
       <Filter>Multicraft</Filter>
     </ClCompile>
-    <ClCompile Include="src\Blocks\BaseBlock.cpp">
+    <ClCompile Include="..\..\src\Blocks\BaseBlock.cpp">
       <Filter>Multicraft\Blocks</Filter>
     </ClCompile>
-    <ClCompile Include="src\Entity\Entity.cpp">
+    <ClCompile Include="..\..\src\Entity\Entity.cpp">
       <Filter>Multicraft\Entity</Filter>
     </ClCompile>
-    <ClCompile Include="src\Entity\MovingEntity.cpp">
+    <ClCompile Include="..\..\src\Entity\MovingEntity.cpp">
       <Filter>Multicraft\Entity</Filter>
     </ClCompile>
-    <ClCompile Include="src\World\Chunk.cpp">
+    <ClCompile Include="..\..\src\World\Chunk.cpp">
       <Filter>Multicraft\World</Filter>
     </ClCompile>
-    <ClCompile Include="src\World\Player.cpp">
+    <ClCompile Include="..\..\src\World\Player.cpp">
       <Filter>Multicraft\World</Filter>
     </ClCompile>
-    <ClCompile Include="src\World\World.cpp">
+    <ClCompile Include="..\..\src\World\World.cpp">
       <Filter>Multicraft\World</Filter>
     </ClCompile>
-    <ClCompile Include="src\World\WorldConfig.cpp">
+    <ClCompile Include="..\..\src\World\WorldConfig.cpp">
       <Filter>Multicraft\World</Filter>
     </ClCompile>
-    <ClCompile Include="src\Utils\Interpolation.cpp">
+    <ClCompile Include="..\..\src\Utils\Interpolation.cpp">
       <Filter>Multicraft\Utils</Filter>
     </ClCompile>
-    <ClCompile Include="src\Utils\MathHelper.cpp">
+    <ClCompile Include="..\..\src\Utils\MathHelper.cpp">
       <Filter>Multicraft\Utils</Filter>
     </ClCompile>
-    <ClCompile Include="src\Utils\RandMT.cpp">
+    <ClCompile Include="..\..\src\Utils\RandMT.cpp">
       <Filter>Multicraft\Utils</Filter>
     </ClCompile>
-    <ClCompile Include="src\Utils\SimplexNoise.cpp">
+    <ClCompile Include="..\..\src\Utils\SimplexNoise.cpp">
       <Filter>Multicraft\Utils</Filter>
     </ClCompile>
-    <ClCompile Include="src\Utils\TexturePack.cpp">
+    <ClCompile Include="..\..\src\Utils\TexturePack.cpp">
       <Filter>Multicraft\Utils</Filter>
     </ClCompile>
-    <ClCompile Include="src\Utils\VertexBuilder.cpp">
+    <ClCompile Include="..\..\src\Utils\VertexBuilder.cpp">
       <Filter>Multicraft\Utils</Filter>
     </ClCompile>
-    <ClCompile Include="src\Terrain\ChunkHeightMap.cpp">
+    <ClCompile Include="..\..\src\Terrain\ChunkHeightMap.cpp">
       <Filter>Multicraft\Terrain</Filter>
     </ClCompile>
-    <ClCompile Include="src\Terrain\TerrainGenerator.cpp">
+    <ClCompile Include="..\..\src\Terrain\TerrainGenerator.cpp">
       <Filter>Multicraft\Terrain</Filter>
     </ClCompile>
-    <ClCompile Include="src\Terrain\Biome\Biome.cpp">
+    <ClCompile Include="..\..\src\Terrain\Biome\Biome.cpp">
       <Filter>Multicraft\Terrain\Biome</Filter>
     </ClCompile>
-    <ClCompile Include="src\Terrain\Biome\TreeGenerator.cpp">
+    <ClCompile Include="..\..\src\Terrain\Biome\TreeGenerator.cpp">
       <Filter>Multicraft\Terrain\Biome</Filter>
     </ClCompile>
-    <ClCompile Include="src\Starter.cpp">
+    <ClCompile Include="..\..\src\Starter.cpp">
       <Filter>Multicraft</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Threads\Lock.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Threads\Lock.cpp">
       <Filter>Aurora\Threads</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Threads\Mutex.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Threads\Mutex.cpp">
       <Filter>Aurora\Threads</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Threads\Thread.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Threads\Thread.cpp">
       <Filter>Aurora\Threads</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Threads\win\MutexImpl.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Threads\win\MutexImpl.cpp">
       <Filter>Aurora\Threads\win</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Threads\win\ThreadImpl.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Threads\win\ThreadImpl.cpp">
       <Filter>Aurora\Threads\win</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Threads\Sleep.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Threads\Sleep.cpp">
       <Filter>Aurora\Threads</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Threads\win\SleepImpl.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Threads\win\SleepImpl.cpp">
       <Filter>Aurora\Threads\win</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Math\MathUtils.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Math\MathUtils.cpp">
       <Filter>Aurora\Math</Filter>
     </ClCompile>
-    <ClCompile Include="src\Utils\mersenne-twister.cpp">
-      <Filter>Multicraft\Utils</Filter>
+    <ClCompile Include="..\..\..\..\Aurora\Graphics\stb\fontstash.cpp">
+      <Filter>Aurora\Graphics\stb</Filter>
     </ClCompile>
-    <ClCompile Include="src\World\ChunkProvider.cpp">
+    <ClCompile Include="..\..\..\..\Aurora\Graphics\stb\fontstash_renderer.cpp">
+      <Filter>Aurora\Graphics\stb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Aurora\Graphics\stb\stb_truetype.cpp">
+      <Filter>Aurora\Graphics\stb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Aurora\Graphics\UnicodeFont.cpp">
+      <Filter>Aurora\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Aurora\Graphics\SkyBox.cpp">
+      <Filter>Aurora\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\World\ChunkProvider.cpp">
       <Filter>Multicraft\World</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Aurora\Graphics\stb\fontstash.cpp">
-      <Filter>Aurora\Graphics\stb</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Aurora\Graphics\stb\fontstash_renderer.cpp">
-      <Filter>Aurora\Graphics\stb</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Aurora\Graphics\stb\stb_truetype.cpp">
-      <Filter>Aurora\Graphics\stb</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Aurora\Graphics\UnicodeFont.cpp">
-      <Filter>Aurora\Graphics</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Aurora\Graphics\SkyBox.cpp">
-      <Filter>Aurora\Graphics</Filter>
+    <ClCompile Include="..\..\src\Utils\mersenne-twister.cpp">
+      <Filter>Multicraft\Utils</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Aurora\Audio\AudioManager.h">
+    <ClInclude Include="..\..\..\..\Aurora\Audio\AudioManager.h">
       <Filter>Aurora\Audio</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Audio\Sound.h">
+    <ClInclude Include="..\..\..\..\Aurora\Audio\Sound.h">
       <Filter>Aurora\Audio</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Audio\sfml\sfmlAudioManager.h">
+    <ClInclude Include="..\..\..\..\Aurora\Audio\sfml\sfmlAudioManager.h">
       <Filter>Aurora\Audio\sfml</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\Camera.h">
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\Camera.h">
       <Filter>Aurora\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\Image.h">
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\Image.h">
       <Filter>Aurora\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\RenderManager.h">
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\RenderManager.h">
       <Filter>Aurora\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\SplashScreen.h">
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\SplashScreen.h">
       <Filter>Aurora\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\Sprite.h">
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\Sprite.h">
       <Filter>Aurora\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\Sprite3D.h">
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\Sprite3D.h">
       <Filter>Aurora\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\SpriteAnimation.h">
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\SpriteAnimation.h">
       <Filter>Aurora\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\TextureManager.h">
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\TextureManager.h">
       <Filter>Aurora\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\TrueTypeFont.h">
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\TrueTypeFont.h">
       <Filter>Aurora\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\Vertex.h">
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\Vertex.h">
       <Filter>Aurora\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Math\BoundingBox.h">
+    <ClInclude Include="..\..\..\..\Aurora\Math\BoundingBox.h">
       <Filter>Aurora\Math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Math\BoundingBox2D.h">
+    <ClInclude Include="..\..\..\..\Aurora\Math\BoundingBox2D.h">
       <Filter>Aurora\Math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Math\BoundingSphere.h">
+    <ClInclude Include="..\..\..\..\Aurora\Math\BoundingSphere.h">
       <Filter>Aurora\Math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Math\Frustum.h">
+    <ClInclude Include="..\..\..\..\Aurora\Math\Frustum.h">
       <Filter>Aurora\Math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Math\MathLib.h">
+    <ClInclude Include="..\..\..\..\Aurora\Math\MathLib.h">
       <Filter>Aurora\Math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Math\Matrix3.h">
+    <ClInclude Include="..\..\..\..\Aurora\Math\Matrix3.h">
       <Filter>Aurora\Math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Math\Matrix4.h">
+    <ClInclude Include="..\..\..\..\Aurora\Math\Matrix4.h">
       <Filter>Aurora\Math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Math\Plane.h">
+    <ClInclude Include="..\..\..\..\Aurora\Math\Plane.h">
       <Filter>Aurora\Math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Math\Polygon.h">
+    <ClInclude Include="..\..\..\..\Aurora\Math\Polygon.h">
       <Filter>Aurora\Math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Math\Quaternion.h">
+    <ClInclude Include="..\..\..\..\Aurora\Math\Quaternion.h">
       <Filter>Aurora\Math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Math\Ray.h">
+    <ClInclude Include="..\..\..\..\Aurora\Math\Ray.h">
       <Filter>Aurora\Math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Math\Vector2.h">
+    <ClInclude Include="..\..\..\..\Aurora\Math\Vector2.h">
       <Filter>Aurora\Math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Math\Vector3.h">
+    <ClInclude Include="..\..\..\..\Aurora\Math\Vector3.h">
       <Filter>Aurora\Math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Math\Vector4.h">
+    <ClInclude Include="..\..\..\..\Aurora\Math\Vector4.h">
       <Filter>Aurora\Math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Network\pc\PcNetworkManager.h">
+    <ClInclude Include="..\..\..\..\Aurora\Network\pc\PcNetworkManager.h">
       <Filter>Aurora\Network\pc</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Network\Win32\SocketHelper.hpp">
+    <ClInclude Include="..\..\..\..\Aurora\Network\Win32\SocketHelper.hpp">
       <Filter>Aurora\Network\Win32</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Network\Http.hpp">
+    <ClInclude Include="..\..\..\..\Aurora\Network\Http.hpp">
       <Filter>Aurora\Network</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Network\IPAddress.hpp">
+    <ClInclude Include="..\..\..\..\Aurora\Network\IPAddress.hpp">
       <Filter>Aurora\Network</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Network\NetworkInputControllerClient.h">
+    <ClInclude Include="..\..\..\..\Aurora\Network\NetworkInputControllerClient.h">
       <Filter>Aurora\Network</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Network\NetworkInputControllerServer.h">
+    <ClInclude Include="..\..\..\..\Aurora\Network\NetworkInputControllerServer.h">
       <Filter>Aurora\Network</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Network\NetworkManager.h">
+    <ClInclude Include="..\..\..\..\Aurora\Network\NetworkManager.h">
       <Filter>Aurora\Network</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Network\Packet.hpp">
+    <ClInclude Include="..\..\..\..\Aurora\Network\Packet.hpp">
       <Filter>Aurora\Network</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Network\Selector.hpp">
+    <ClInclude Include="..\..\..\..\Aurora\Network\Selector.hpp">
       <Filter>Aurora\Network</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Network\SelectorBase.hpp">
+    <ClInclude Include="..\..\..\..\Aurora\Network\SelectorBase.hpp">
       <Filter>Aurora\Network</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Network\SocketHelper.hpp">
+    <ClInclude Include="..\..\..\..\Aurora\Network\SocketHelper.hpp">
       <Filter>Aurora\Network</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Network\SocketTCP.hpp">
+    <ClInclude Include="..\..\..\..\Aurora\Network\SocketTCP.hpp">
       <Filter>Aurora\Network</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Network\SocketUDP.hpp">
+    <ClInclude Include="..\..\..\..\Aurora\Network\SocketUDP.hpp">
       <Filter>Aurora\Network</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\System\pc\PcSystemManager.h">
+    <ClInclude Include="..\..\..\..\Aurora\System\pc\PcSystemManager.h">
       <Filter>Aurora\System\pc</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\System\Clock.h">
+    <ClInclude Include="..\..\..\..\Aurora\System\Clock.h">
       <Filter>Aurora\System</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\System\DiskFile.h">
+    <ClInclude Include="..\..\..\..\Aurora\System\DiskFile.h">
       <Filter>Aurora\System</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\System\File.h">
+    <ClInclude Include="..\..\..\..\Aurora\System\File.h">
       <Filter>Aurora\System</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\System\FileManager.h">
+    <ClInclude Include="..\..\..\..\Aurora\System\FileManager.h">
       <Filter>Aurora\System</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\System\SystemManager.h">
+    <ClInclude Include="..\..\..\..\Aurora\System\SystemManager.h">
       <Filter>Aurora\System</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\System\VFSFile.h">
+    <ClInclude Include="..\..\..\..\Aurora\System\VFSFile.h">
       <Filter>Aurora\System</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\System\VFSPack.h">
+    <ClInclude Include="..\..\..\..\Aurora\System\VFSPack.h">
       <Filter>Aurora\System</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\System\ZipFile.h">
+    <ClInclude Include="..\..\..\..\Aurora\System\ZipFile.h">
       <Filter>Aurora\System</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\System\ZipPack.h">
+    <ClInclude Include="..\..\..\..\Aurora\System\ZipPack.h">
       <Filter>Aurora\System</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Utils\pc\WinGameLoader.h">
+    <ClInclude Include="..\..\..\..\Aurora\Utils\pc\WinGameLoader.h">
       <Filter>Aurora\Utils\pc</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Utils\AES.h">
+    <ClInclude Include="..\..\..\..\Aurora\Utils\AES.h">
       <Filter>Aurora\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Utils\Compression.h">
+    <ClInclude Include="..\..\..\..\Aurora\Utils\Compression.h">
       <Filter>Aurora\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Utils\Crypto.h">
+    <ClInclude Include="..\..\..\..\Aurora\Utils\Crypto.h">
       <Filter>Aurora\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Utils\GameLoader.h">
+    <ClInclude Include="..\..\..\..\Aurora\Utils\GameLoader.h">
       <Filter>Aurora\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Utils\GameManager.h">
+    <ClInclude Include="..\..\..\..\Aurora\Utils\GameManager.h">
       <Filter>Aurora\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Utils\GameState.h">
+    <ClInclude Include="..\..\..\..\Aurora\Utils\GameState.h">
       <Filter>Aurora\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Utils\md5.h">
+    <ClInclude Include="..\..\..\..\Aurora\Utils\md5.h">
       <Filter>Aurora\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Utils\PlatformConfigurator.h">
+    <ClInclude Include="..\..\..\..\Aurora\Utils\PlatformConfigurator.h">
       <Filter>Aurora\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\libs\libzip\crypt.h">
+    <ClInclude Include="..\..\..\..\libs\libzip\crypt.h">
       <Filter>Libs\libzip</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\libs\libzip\ioapi.h">
+    <ClInclude Include="..\..\..\..\libs\libzip\ioapi.h">
       <Filter>Libs\libzip</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\libs\libzip\unzip.h">
+    <ClInclude Include="..\..\..\..\libs\libzip\unzip.h">
       <Filter>Libs\libzip</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\libs\libzip\zip.h">
+    <ClInclude Include="..\..\..\..\libs\libzip\zip.h">
       <Filter>Libs\libzip</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\libs\libzip\iowin32.h">
+    <ClInclude Include="..\..\..\..\libs\libzip\iowin32.h">
       <Filter>Libs\libzip</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Utils\Logger.h">
+    <ClInclude Include="..\..\..\..\Aurora\Utils\Logger.h">
       <Filter>Aurora\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\RenderTexture.h">
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\RenderTexture.h">
       <Filter>Aurora\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\models\ModelIqm.h">
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\models\ModelIqm.h">
       <Filter>Aurora\Graphics\models</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\models\ModelIqmUtils.h">
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\models\ModelIqmUtils.h">
       <Filter>Aurora\Graphics\models</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\models\ModelIqmGeometry.h">
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\models\ModelIqmGeometry.h">
       <Filter>Aurora\Graphics\models</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\models\ModelMd5.h">
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\models\ModelMd5.h">
       <Filter>Aurora\Graphics\models</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\models\ModelObj2.h">
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\models\ModelObj2.h">
       <Filter>Aurora\Graphics\models</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\models\ModelMesh.h">
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\models\ModelMesh.h">
       <Filter>Aurora\Graphics\models</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\models\MeshMaterial.h">
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\models\MeshMaterial.h">
       <Filter>Aurora\Graphics\models</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\VertexBuffer.h">
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\VertexBuffer.h">
       <Filter>Aurora\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\opengl\VertexBuffer.h">
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\opengl\VertexBuffer.h">
       <Filter>Aurora\Graphics\opengl</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\opengl\LegacyOpenGLRenderManager.h">
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\opengl\LegacyOpenGLRenderManager.h">
       <Filter>Aurora\Graphics\opengl</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\opengl\shaders\shader.h">
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\opengl\shaders\shader.h">
       <Filter>Aurora\Graphics\opengl\shaders</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\System\Timer.h">
+    <ClInclude Include="..\..\..\..\Aurora\System\Timer.h">
       <Filter>Aurora\System</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\libs\tinyxml\tinyxml2.h">
+    <ClInclude Include="..\..\..\..\libs\tinyxml\tinyxml2.h">
       <Filter>Libs\tinyxml</Filter>
     </ClInclude>
-    <ClInclude Include="src\PlayState.h">
+    <ClInclude Include="..\..\src\PlayState.h">
       <Filter>Multicraft</Filter>
     </ClInclude>
-    <ClInclude Include="src\Blocks\BaseBlock.h">
+    <ClInclude Include="..\..\src\Blocks\BaseBlock.h">
       <Filter>Multicraft\Blocks</Filter>
     </ClInclude>
-    <ClInclude Include="src\Blocks\BlockBedrock.h">
+    <ClInclude Include="..\..\src\Blocks\BlockBedrock.h">
       <Filter>Multicraft\Blocks</Filter>
     </ClInclude>
-    <ClInclude Include="src\Blocks\BlockCobbleStone.h">
+    <ClInclude Include="..\..\src\Blocks\BlockCobbleStone.h">
       <Filter>Multicraft\Blocks</Filter>
     </ClInclude>
-    <ClInclude Include="src\Blocks\BlockDirt.h">
+    <ClInclude Include="..\..\src\Blocks\BlockDirt.h">
       <Filter>Multicraft\Blocks</Filter>
     </ClInclude>
-    <ClInclude Include="src\Blocks\BlockGrass.h">
+    <ClInclude Include="..\..\src\Blocks\BlockGrass.h">
       <Filter>Multicraft\Blocks</Filter>
     </ClInclude>
-    <ClInclude Include="src\Blocks\BlockLavaMoving.h">
+    <ClInclude Include="..\..\src\Blocks\BlockLavaMoving.h">
       <Filter>Multicraft\Blocks</Filter>
     </ClInclude>
-    <ClInclude Include="src\Blocks\BlockLavaStill.h">
+    <ClInclude Include="..\..\src\Blocks\BlockLavaStill.h">
       <Filter>Multicraft\Blocks</Filter>
     </ClInclude>
-    <ClInclude Include="src\Blocks\BlockLeaf.h">
+    <ClInclude Include="..\..\src\Blocks\BlockLeaf.h">
       <Filter>Multicraft\Blocks</Filter>
     </ClInclude>
-    <ClInclude Include="src\Blocks\BlockLog.h">
+    <ClInclude Include="..\..\src\Blocks\BlockLog.h">
       <Filter>Multicraft\Blocks</Filter>
     </ClInclude>
-    <ClInclude Include="src\Blocks\BlockPlanks.h">
+    <ClInclude Include="..\..\src\Blocks\BlockPlanks.h">
       <Filter>Multicraft\Blocks</Filter>
     </ClInclude>
-    <ClInclude Include="src\Blocks\Blocks.h">
+    <ClInclude Include="..\..\src\Blocks\Blocks.h">
       <Filter>Multicraft\Blocks</Filter>
     </ClInclude>
-    <ClInclude Include="src\Blocks\BlockSand.h">
+    <ClInclude Include="..\..\src\Blocks\BlockSand.h">
       <Filter>Multicraft\Blocks</Filter>
     </ClInclude>
-    <ClInclude Include="src\Blocks\BlockSapling.h">
+    <ClInclude Include="..\..\src\Blocks\BlockSapling.h">
       <Filter>Multicraft\Blocks</Filter>
     </ClInclude>
-    <ClInclude Include="src\Blocks\BlockStone.h">
+    <ClInclude Include="..\..\src\Blocks\BlockStone.h">
       <Filter>Multicraft\Blocks</Filter>
     </ClInclude>
-    <ClInclude Include="src\Blocks\BlockWaterMoving.h">
+    <ClInclude Include="..\..\src\Blocks\BlockWaterMoving.h">
       <Filter>Multicraft\Blocks</Filter>
     </ClInclude>
-    <ClInclude Include="src\Blocks\BlockWaterStill.h">
+    <ClInclude Include="..\..\src\Blocks\BlockWaterStill.h">
       <Filter>Multicraft\Blocks</Filter>
     </ClInclude>
-    <ClInclude Include="src\Blocks\LavaMoving.h">
+    <ClInclude Include="..\..\src\Blocks\LavaMoving.h">
       <Filter>Multicraft\Blocks</Filter>
     </ClInclude>
-    <ClInclude Include="src\Entity\BlockPosition.h">
+    <ClInclude Include="..\..\src\Entity\BlockPosition.h">
       <Filter>Multicraft\Entity</Filter>
     </ClInclude>
-    <ClInclude Include="src\Entity\Entity.h">
+    <ClInclude Include="..\..\src\Entity\Entity.h">
       <Filter>Multicraft\Entity</Filter>
     </ClInclude>
-    <ClInclude Include="src\Entity\MovingEntity.h">
+    <ClInclude Include="..\..\src\Entity\MovingEntity.h">
       <Filter>Multicraft\Entity</Filter>
     </ClInclude>
-    <ClInclude Include="src\World\Chunk.h">
+    <ClInclude Include="..\..\src\World\Chunk.h">
       <Filter>Multicraft\World</Filter>
     </ClInclude>
-    <ClInclude Include="src\World\Player.h">
+    <ClInclude Include="..\..\src\World\Player.h">
       <Filter>Multicraft\World</Filter>
     </ClInclude>
-    <ClInclude Include="src\World\World.h">
+    <ClInclude Include="..\..\src\World\World.h">
       <Filter>Multicraft\World</Filter>
     </ClInclude>
-    <ClInclude Include="src\World\WorldConfig.h">
+    <ClInclude Include="..\..\src\World\WorldConfig.h">
       <Filter>Multicraft\World</Filter>
     </ClInclude>
-    <ClInclude Include="src\Utils\Interpolation.h">
+    <ClInclude Include="..\..\src\Utils\Interpolation.h">
       <Filter>Multicraft\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="src\Utils\MathHelper.h">
+    <ClInclude Include="..\..\src\Utils\MathHelper.h">
       <Filter>Multicraft\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="src\Utils\RandMT.h">
+    <ClInclude Include="..\..\src\Utils\RandMT.h">
       <Filter>Multicraft\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="src\Utils\SimplexNoise.h">
+    <ClInclude Include="..\..\src\Utils\SimplexNoise.h">
       <Filter>Multicraft\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="src\Utils\TexturePack.h">
+    <ClInclude Include="..\..\src\Utils\TexturePack.h">
       <Filter>Multicraft\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="src\Utils\VertexBuilder.h">
+    <ClInclude Include="..\..\src\Utils\VertexBuilder.h">
       <Filter>Multicraft\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="src\Terrain\ChunkHeightMap.h">
+    <ClInclude Include="..\..\src\Terrain\ChunkHeightMap.h">
       <Filter>Multicraft\Terrain</Filter>
     </ClInclude>
-    <ClInclude Include="src\Terrain\TerrainGenerator.h">
+    <ClInclude Include="..\..\src\Terrain\TerrainGenerator.h">
       <Filter>Multicraft\Terrain</Filter>
     </ClInclude>
-    <ClInclude Include="src\Terrain\Biome\Biome.h">
+    <ClInclude Include="..\..\src\Terrain\Biome\Biome.h">
       <Filter>Multicraft\Terrain\Biome</Filter>
     </ClInclude>
-    <ClInclude Include="src\Terrain\Biome\TreeGenerator.h">
+    <ClInclude Include="..\..\src\Terrain\Biome\TreeGenerator.h">
       <Filter>Multicraft\Terrain\Biome</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Threads\Lock.hpp">
+    <ClInclude Include="..\..\..\..\Aurora\Threads\Lock.hpp">
       <Filter>Aurora\Threads</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Threads\Mutex.hpp">
+    <ClInclude Include="..\..\..\..\Aurora\Threads\Mutex.hpp">
       <Filter>Aurora\Threads</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Threads\Thread.hpp">
+    <ClInclude Include="..\..\..\..\Aurora\Threads\Thread.hpp">
       <Filter>Aurora\Threads</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Threads\win\MutexImpl.hpp">
+    <ClInclude Include="..\..\..\..\Aurora\Threads\win\MutexImpl.hpp">
       <Filter>Aurora\Threads\win</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Threads\win\ThreadImpl.hpp">
+    <ClInclude Include="..\..\..\..\Aurora\Threads\win\ThreadImpl.hpp">
       <Filter>Aurora\Threads\win</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Threads\ConcurentQueue.h">
+    <ClInclude Include="..\..\..\..\Aurora\Threads\ConcurentQueue.h">
       <Filter>Aurora\Threads</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Threads\Sleep.h">
+    <ClInclude Include="..\..\..\..\Aurora\Threads\Sleep.h">
       <Filter>Aurora\Threads</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Threads\win\SleepImpl.hpp">
+    <ClInclude Include="..\..\..\..\Aurora\Threads\win\SleepImpl.hpp">
       <Filter>Aurora\Threads\win</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Math\MathUtils.h">
+    <ClInclude Include="..\..\..\..\Aurora\Math\MathUtils.h">
       <Filter>Aurora\Math</Filter>
     </ClInclude>
-    <ClInclude Include="src\Utils\mersenne-twister.h">
-      <Filter>Multicraft\Utils</Filter>
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\stb\stb_image.h">
+      <Filter>Aurora\Graphics\stb</Filter>
     </ClInclude>
-    <ClInclude Include="src\World\ChunkProvider.h">
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\stb\stb_image_write.h">
+      <Filter>Aurora\Graphics\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\stb\stb_truetype.h">
+      <Filter>Aurora\Graphics\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\stb\fontstash.h">
+      <Filter>Aurora\Graphics\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\stb\fontstash_renderer.h">
+      <Filter>Aurora\Graphics\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\UnicodeFont.h">
+      <Filter>Aurora\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Aurora\Graphics\SkyBox.h">
+      <Filter>Aurora\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\World\ChunkProvider.h">
       <Filter>Multicraft\World</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\stb\stb_image.h">
-      <Filter>Aurora\Graphics\stb</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\stb\stb_image_write.h">
-      <Filter>Aurora\Graphics\stb</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\stb\stb_truetype.h">
-      <Filter>Aurora\Graphics\stb</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\stb\fontstash.h">
-      <Filter>Aurora\Graphics\stb</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\stb\fontstash_renderer.h">
-      <Filter>Aurora\Graphics\stb</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\UnicodeFont.h">
-      <Filter>Aurora\Graphics</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Aurora\Graphics\SkyBox.h">
-      <Filter>Aurora\Graphics</Filter>
+    <ClInclude Include="..\..\src\Utils\mersenne-twister.h">
+      <Filter>Multicraft\Utils</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\Aurora\Network\Selector.inl">
+    <None Include="..\..\..\..\Aurora\Network\Selector.inl">
       <Filter>Aurora\Network</Filter>
     </None>
-    <None Include="..\..\Aurora\Graphics\opengl\shaders\basic.vert">
+    <None Include="..\..\..\..\Aurora\Graphics\opengl\shaders\basic.vert">
       <Filter>Aurora\Graphics\opengl\shaders</Filter>
     </None>
-    <None Include="..\..\Aurora\Graphics\opengl\shaders\basic.frag">
+    <None Include="..\..\..\..\Aurora\Graphics\opengl\shaders\basic.frag">
       <Filter>Aurora\Graphics\opengl\shaders</Filter>
     </None>
   </ItemGroup>

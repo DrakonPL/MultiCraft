@@ -1,7 +1,13 @@
 #include <Aurora/Graphics/Sprite.h>
 #include <Aurora/Graphics/TextureManager.h>
 
-#include <malloc.h>
+
+
+#ifdef AURORA_PSP
+			#include <malloc.h>
+#else
+			#include <string.h>
+#endif
 
 namespace Aurora
 {
