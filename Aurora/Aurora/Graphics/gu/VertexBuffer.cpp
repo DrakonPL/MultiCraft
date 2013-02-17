@@ -36,7 +36,7 @@ namespace Aurora
 					Reset();
 					return;
 				}
-			
+				
 				_pspVertices = (CraftPSPVertex*)memalign(16,_indicesCount * sizeof(CraftPSPVertex));
 				
 				for(int i = 0; i < _indicesCount; i++)

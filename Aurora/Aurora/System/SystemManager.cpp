@@ -6,6 +6,10 @@
 #include <Aurora/System/pc/PcSystemManager.h>
 #endif
 
+#ifdef AURORA_UNIX_MAC
+#include <Aurora/System/pc/PcSystemManager.h>
+#endif
+
 #ifdef AURORA_PSP
 #include <Aurora/System/psp/PspSystemManager.h>
 #endif
@@ -33,6 +37,10 @@ namespace Aurora
 			if(_systemManager == 0)
 			{
 #ifdef AURORA_PC
+				_systemManager = new PcSystemManager();
+#endif
+
+#ifdef AURORA_UNIX_MAC
 				_systemManager = new PcSystemManager();
 #endif
 

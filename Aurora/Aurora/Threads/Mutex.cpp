@@ -12,12 +12,8 @@
     #include <Aurora/Threads/unix/MutexImpl.hpp>
 #endif
 
-#ifdef AURORA_IOS
-#include <Aurora/Threads/unix/MutexImpl.hpp>
-#endif
-
 #ifdef AURORA_UNIX_MAC
-#include <Aurora/Threads/unix/MutexImpl.hpp>
+	#include <Aurora/Threads/unix/MutexImpl.hpp>
 #endif
 
 

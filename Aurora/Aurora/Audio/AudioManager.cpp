@@ -5,6 +5,10 @@
 #include <Aurora/Audio/sfml/sfmlAudioManager.h>
 #endif
 
+#ifdef AURORA_UNIX_MAC
+#include <Aurora/Audio/sfml/sfmlAudioManager.h>
+#endif
+
 #ifdef AURORA_PSP
 #include <Aurora/Audio/psp/PspAudioManager.h>
 #endif
@@ -30,6 +34,10 @@ namespace Aurora
 			if(_audioManager == 0)
 			{
 #ifdef AURORA_PC
+				_audioManager = new sfmlAudioManager();
+#endif
+
+#ifdef AURORA_UNIX_MAC
 				_audioManager = new sfmlAudioManager();
 #endif
 

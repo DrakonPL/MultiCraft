@@ -16,9 +16,8 @@
     #include <Aurora/Threads/unix/SleepImpl.hpp>
 #endif
 
-
 #ifdef AURORA_UNIX_MAC
-#include <Aurora/Threads/unix/SleepImpl.hpp>
+	#include <Aurora/Threads/unix/SleepImpl.hpp>
 #endif
 
 namespace Aurora

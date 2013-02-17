@@ -5,6 +5,10 @@
 #include <Aurora/Utils/pc/WinGameLoader.h>
 #endif
 
+#ifdef AURORA_UNIX_MAC
+#include <Aurora/Utils/pc/WinGameLoader.h>
+#endif
+
 #ifdef AURORA_PSP
 #include <Aurora/Utils/psp/PspGameLoader.h>
 #endif
@@ -31,6 +35,10 @@ namespace Aurora
 			GameLoader* _loader = 0;
 
 			#ifdef AURORA_PC
+			_loader = new WinGameLoader(gameManager);
+			#endif
+
+			#ifdef AURORA_UNIX_MAC
 			_loader = new WinGameLoader(gameManager);
 			#endif
 

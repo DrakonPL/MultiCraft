@@ -10,12 +10,12 @@ void PlayState::Init()
 	font = new TrueTypeFont("Assets/Minecraft/font.ttf",16);
 
 	_skyBox = new SkyBox();
-	_skyBox->LoadImage("Assets/SkyBox/0Panorama_back.png",Back);
-	_skyBox->LoadImage("Assets/SkyBox/0Panorama_front.png",Front);
-	_skyBox->LoadImage("Assets/SkyBox/0Panorama_left.png",Left);
-	_skyBox->LoadImage("Assets/SkyBox/0Panorama_right.png",Right);
-	_skyBox->LoadImage("Assets/SkyBox/0Panorama_up.png",Up);
-	_skyBox->LoadImage("Assets/SkyBox/0Panorama_down.png",Down);
+	_skyBox->LoadImage("Assets/Skybox/0Panorama_back.png",Back);
+	_skyBox->LoadImage("Assets/Skybox/0Panorama_front.png",Front);
+	_skyBox->LoadImage("Assets/Skybox/0Panorama_left.png",Left);
+	_skyBox->LoadImage("Assets/Skybox/0Panorama_right.png",Right);
+	_skyBox->LoadImage("Assets/Skybox/0Panorama_up.png",Up);
+	_skyBox->LoadImage("Assets/Skybox/0Panorama_down.png",Down);
 
 	cubeModel = new ModelObj2();
 	cubeModel->Load("Assets/Models/Obj/textureCube.objb");

@@ -1,7 +1,18 @@
-MultiCraft
-==========
+Small framework for creating games.
 
-You all know what this is...
+Compilation under PSP:
+- download latest unofficial psp sdk from http://sourceforge.net/projects/minpspw/
+- run compile.bat in Build/Psp
+
+Compilation under Windows:
+- make sure you have Visual Studio 2012 installed
+- open Aurora.sln with VS2012 from Build/VS2012
+- run Build from Build menu
+
+Compilation under Linux(i'm using Ubuntu)
+- sudo apt-get install libsfml* libglu1-mesa-dev
+- sudo apt-get install libglew-dev
+- run make in Build/Linux
 
 Folders:
 Assets - all assets needed for tests or games.

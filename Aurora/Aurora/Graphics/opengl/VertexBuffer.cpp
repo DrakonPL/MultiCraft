@@ -4,6 +4,8 @@
 	#include <Aurora/Graphics/opengl/LegacyOpenGLRenderManager.h>
 #elif defined AURORA_PS3
 	#include <Aurora/Graphics/opengl/PSGLRenderManager.h>
+#elif defined AURORA_UNIX_MAC
+	#include <Aurora/Graphics/opengl/LegacyOpenGLRenderManager.h>
 #else
 	#include <Aurora/Graphics/opengl/OpenGLES1RenderManager.h>
 #endif
@@ -42,7 +44,7 @@ namespace Aurora
 					Reset();
 					return;
 				}
-
+				
 				//vbo creation
 				glGenBuffers(1, &_vboId);
 				glBindBuffer(GL_ARRAY_BUFFER, _vboId);

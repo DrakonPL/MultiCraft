@@ -12,10 +12,6 @@
     #include <Aurora/Threads/unix/ThreadImpl.hpp>
 #endif
 
-#ifdef AURORA_IOS
-    #include <Aurora/Threads/unix/ThreadImpl.hpp>
-#endif
-
 #ifdef AURORA_UNIX_MAC
     #include <Aurora/Threads/unix/ThreadImpl.hpp>
 #endif

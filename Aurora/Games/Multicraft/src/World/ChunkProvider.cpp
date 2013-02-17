@@ -1,5 +1,6 @@
 #include "ChunkProvider.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 ChunkProvider::ChunkProvider(std::string folderName)
 {

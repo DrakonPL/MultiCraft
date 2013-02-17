@@ -5,6 +5,10 @@
 #include <Aurora/Network/pc/PcNetworkManager.h>
 #endif
 
+#ifdef AURORA_UNIX_MAC
+#include <Aurora/Network/pc/PcNetworkManager.h>
+#endif
+
 #ifdef AURORA_PSP
 #include <Aurora/Network/psp/PspNetworkManager.h>
 #endif
@@ -30,6 +34,10 @@ namespace Aurora
 			if(_networkManager == 0)
 			{
 #ifdef AURORA_PC
+				_networkManager = new PcNetworkManager();
+#endif
+
+#ifdef AURORA_UNIX_MAC
 				_networkManager = new PcNetworkManager();
 #endif
 
