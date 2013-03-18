@@ -23,3 +23,5 @@ Games - main folder with games
 libs - folder for all dependencies
 Tests - all tests for framework
 Tools - misc stuff
+
+License for my code is in License.txt file.
