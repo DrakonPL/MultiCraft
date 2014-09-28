@@ -184,7 +184,7 @@ void VertexBuilder::BuildTransparentChunk(Chunk* chunk)
 
 					if (!transparentBlock || visibleBlock || singleBlock)
 					{
-						down = _boundDown(world->_texturePercent * (blockType->_upPlane.y + 1.0f));
+						down = _boundDown(world->_texturePercent * (blockType->_sidePlane.y + 1.0f));
 						up = _boundUp(down - world->_texturePercent);
 
 						left = world->_texturePercent * blockType->_sidePlane.x;
@@ -218,7 +218,7 @@ void VertexBuilder::BuildTransparentChunk(Chunk* chunk)
 
 					if (!transparentBlock || visibleBlock || singleBlock)
 					{
-						down = _boundDown(world->_texturePercent * (blockType->_upPlane.y + 1.0f));
+						down = _boundDown(world->_texturePercent * (blockType->_sidePlane.y + 1.0f));
 						up = _boundUp(down - world->_texturePercent);
 
 						left = world->_texturePercent * blockType->_sidePlane.x;
@@ -252,7 +252,7 @@ void VertexBuilder::BuildTransparentChunk(Chunk* chunk)
 					if (!transparentBlock || visibleBlock || singleBlock)
 					{
 						//up
-						down = world->_texturePercent * (blockType->_upPlane.y + 1.0f);
+						down = world->_texturePercent * (blockType->_downPlane.y + 1.0f);
 						up = down - world->_texturePercent;
 
 						left = world->_texturePercent * blockType->_downPlane.x;
@@ -323,7 +323,7 @@ void VertexBuilder::BuildTransparentChunk(Chunk* chunk)
 
 					if (!transparentBlock || visibleBlock || singleBlock)
 					{
-						down = _boundDown(world->_texturePercent * (blockType->_upPlane.y + 1.0f));
+						down = _boundDown(world->_texturePercent * (blockType->_sidePlane.y + 1.0f));
 						up = _boundUp(down - world->_texturePercent);
 
 						left = world->_texturePercent * blockType->_sidePlane.x;
@@ -357,7 +357,7 @@ void VertexBuilder::BuildTransparentChunk(Chunk* chunk)
 
 					if (!transparentBlock || visibleBlock || singleBlock)
 					{
-						down = _boundDown(world->_texturePercent * (blockType->_upPlane.y + 1.0f));
+						down = _boundDown(world->_texturePercent * (blockType->_sidePlane.y + 1.0f));
 						up = _boundUp(down - world->_texturePercent);
 
 						left = world->_texturePercent * blockType->_sidePlane.x;
@@ -472,7 +472,7 @@ void VertexBuilder::BuildChunk(Chunk* chunk)
 
 					if (transparentBlock == true || specialBlock == true)
 					{
-						down = _boundDown(world->_texturePercent * (blockType->_upPlane.y + 1.0f));
+						down = _boundDown(world->_texturePercent * (blockType->_sidePlane.y + 1.0f));
 						up = _boundUp(down - world->_texturePercent);
 
 						left = world->_texturePercent * blockType->_sidePlane.x;
@@ -504,7 +504,7 @@ void VertexBuilder::BuildChunk(Chunk* chunk)
 
 					if (transparentBlock == true || specialBlock == true)
 					{
-						down = _boundDown(world->_texturePercent * (blockType->_upPlane.y + 1.0f));
+						down = _boundDown(world->_texturePercent * (blockType->_sidePlane.y + 1.0f));
 						up = _boundUp(down - world->_texturePercent);
 
 						left = world->_texturePercent * blockType->_sidePlane.x;
@@ -536,7 +536,7 @@ void VertexBuilder::BuildChunk(Chunk* chunk)
 					if (transparentBlock == true || specialBlock == true)
 					{
 						//up
-						down = world->_texturePercent * (blockType->_upPlane.y + 1.0f);
+						down = world->_texturePercent * (blockType->_downPlane.y + 1.0f);
 						up = down - world->_texturePercent;
 
 						left = world->_texturePercent * blockType->_downPlane.x;
@@ -603,7 +603,7 @@ void VertexBuilder::BuildChunk(Chunk* chunk)
 
 					if (transparentBlock == true || specialBlock == true)
 					{
-						down = _boundDown(world->_texturePercent * (blockType->_upPlane.y + 1.0f));
+						down = _boundDown(world->_texturePercent * (blockType->_sidePlane.y + 1.0f));
 						up = _boundUp(down - world->_texturePercent);
 
 						left = world->_texturePercent * blockType->_sidePlane.x;
@@ -635,7 +635,7 @@ void VertexBuilder::BuildChunk(Chunk* chunk)
 
 					if (transparentBlock == true || specialBlock == true)
 					{
-						down = _boundDown(world->_texturePercent * (blockType->_upPlane.y + 1.0f));
+						down = _boundDown(world->_texturePercent * (blockType->_sidePlane.y + 1.0f));
 						up = _boundUp(down - world->_texturePercent);
 
 						left = world->_texturePercent * blockType->_sidePlane.x;
